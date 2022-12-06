@@ -13,7 +13,7 @@ import numpy as np
 import os
 
 min_photos = 13  # minimum photos to calibrate camera
-rows, cols = 7, 6  # size of checkerboard used to calibrate camera
+num_cams_to_check = 50  # number of cameras to try before giving up
 input_folder = './input/'
 data_folder = './calibration_data/'
 device_name = 'default'
@@ -31,7 +31,7 @@ def write_text(image, text, position):
 def take_photos():
     device_number = 0
     camera_found = False
-    while device_number < 10 and not camera_found:
+    while device_number < num_cams_to_check and not camera_found:
         test_cap = cv.VideoCapture(device_number)
         if not test_cap.isOpened(): continue
         
