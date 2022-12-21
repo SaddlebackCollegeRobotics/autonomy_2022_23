@@ -7,4 +7,4 @@ All code for autonomous rover systems. Current projects:
                                 
   **tag detect** - example code running tag detection. Code uses pose estimation for accurate distance estimates. Output given as terminal lines, see example                      photo
   
-  ![distance approximation example](./autonomy_2022_23/tag_example.png)
+  ![distance approximation example](./tag_example.png)
