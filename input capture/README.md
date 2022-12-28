@@ -1,5 +1,12 @@
 # Gamepad Input API
 A wrapper for Pygame's joystick module
+Pygame: https://github.com/pygame/pygame
+
+Tested with Pygame 2.1.2
+
+#### Linux install Pygame: 
+
+    pip install pygame
 
 #### Features
 - Controller hot-plug support.
