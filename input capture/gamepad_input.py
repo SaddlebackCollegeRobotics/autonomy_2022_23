@@ -13,6 +13,7 @@ pygame.init()
 gamepadDict = {}
 loop = True
 
+
 # Quit program
 def quit():
     global loop
