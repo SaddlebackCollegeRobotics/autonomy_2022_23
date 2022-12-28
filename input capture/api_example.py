@@ -1,3 +1,6 @@
+# Author: Cameron Rosenthal
+# Description: Example use of gamepad_input API
+
 import gamepad_input
 import time
 
@@ -96,26 +99,40 @@ if __name__ == "__main__":
     hatEvents = [hatNorth, hatSouth, hatWest, hatEast, hatCentered]
 
     # Async loop to handle gamepad button events
-    gamepad_input.getButtonCallbacks(buttonDownEvents, buttonUpEvents, hatEvents)
+    gamepad_input.run_event_loop(buttonDownEvents, buttonUpEvents, hatEvents)
+    # Note: callbacks are by default set to 'None' if not specified as arguments
+    # Ex: gamepad_input.run_event_loop(buttonDownEvents, buttonUpEvents)
+    # Ex: gamepad_input.run_event_loop(buttonDownEvents, None, None)
+    # You can set individual callbacks to None inside callback arrays if you do not need them
+    # Ex: buttonDownEvents = [north, west, None, east]
 
     # How to get gamepad object and read axis values
-    deadzone = 0.2
+    axis_deadzone = 0.3 # Deadzone is 0 to 1
+    # Note: axis value will be 0 until you move past the deadzone
     
     while True:
         time.sleep(0.5)
         
-
         # Get gamepad object
         gamepad = gamepad_input.getGamepad(0)
 
         if gamepad != None:
 
             # Get left stick axis values
-            (ls_x, ls_y) = gamepad_input.getLeftStick(gamepad, deadzone)
-            (rs_x, rs_y) = gamepad_input.getRightStick(gamepad, deadzone)
+            (ls_x, ls_y) = gamepad_input.getLeftStick(gamepad, axis_deadzone)
+            (rs_x, rs_y) = gamepad_input.getRightStick(gamepad, axis_deadzone)
 
-            # Get trigger axis values
-            (l2, r2) = gamepad_input.getTriggers(gamepad, deadzone)
+            # Get trigger axis values (axis goes from -1 to 1)
+            (l2, r2) = gamepad_input.getTriggers(gamepad, axis_deadzone)
+
+            # Get hat axis values
+            # You can also use the hat callbacks from the run_event_loop() function
+            (hat_x, hat_y) = gamepad_input.getHat(gamepad)
+
+            # If you want to check if a button is pressed, you can use this
+            # or use the callback functions method from the run_event_loop() function
+            if gamepad_input.getButtonValue(gamepad, 1):
+                ...
 
             # Print axis values
             if ls_x > 0:
@@ -143,6 +160,19 @@ if __name__ == "__main__":
             
             if r2 > 0:
                 print("R2")
+
+            if hat_x > 0:
+                print("Hat East")
+
+            if hat_x < 0:
+                print("Hat West")
+
+            if hat_y < 0:
+                print("Hat South")
+
+            if hat_y > 0:
+                print("Hat North")
+
 
     # Safely quit program
     # gamepad_input.quit()
