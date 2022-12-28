@@ -1,5 +1,5 @@
 # Gamepad Input API
-A wrapper for pygame's joystick module
+A wrapper for Pygame's joystick module
 
 #### Features
 - Controller hot-plug support.
