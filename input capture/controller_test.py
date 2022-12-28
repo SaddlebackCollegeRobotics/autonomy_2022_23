@@ -1,3 +1,7 @@
+# From: https://www.pygame.org/docs/ref/joystick.html
+# Description: This is a simple example of how to use the pygame.joystick module.
+# License: LGPL 2.1
+
 import pygame
 
 pygame.init()
