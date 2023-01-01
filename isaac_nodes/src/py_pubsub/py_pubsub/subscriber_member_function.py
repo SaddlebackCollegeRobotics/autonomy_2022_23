@@ -16,7 +16,10 @@ import rclpy
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from sensor_msgs.msg import Image
 
+import cv2
+import cv_bridge
 
 class MinimalSubscriber(Node):
 
@@ -25,10 +28,12 @@ class MinimalSubscriber(Node):
         # Give the node a name.
         super().__init__('minimal_subscriber')
 
+        self.bridge = cv_bridge.CvBridge()
+
         # Subscribe to the topic 'topic'. Callback gets called when a message is received.
         self.subscription = self.create_subscription(
-            String,
-            'topic',
+            Image,
+            '/zed2i/zed_node/left/image_rect_color',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
@@ -36,14 +41,19 @@ class MinimalSubscriber(Node):
 
     # This callback definition simply prints an info message to the console, along with the data it received. 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        #self.get_logger().info(str(msg.header.stamp.sec) + "." + str(msg.header.stamp.nanosec) + " " + str(msg.header.frame_id))
+        frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        self.get_logger().info(str(msg.header.stamp.sec) + "." + str(msg.header.stamp.nanosec) + " " + str(msg.header.frame_id))
+        cv2.imshow("Image RGB", frame)
+        cv2.waitKey(3)
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_subscriber = MinimalSubscriber()
+    cv2.namedWindow("Image RGB", cv2.WINDOW_NORMAL)
 
+    minimal_subscriber = MinimalSubscriber()
     rclpy.spin(minimal_subscriber)
 
     # Destroy the node explicitly

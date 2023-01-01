@@ -26,7 +26,7 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
 
         # Specify data type and topic name. Specify queue size (limit amount of queued messages)
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
+        self.publisher_ = self.create_publisher(String, 'simple_pubsub_topic', 10)
 
         # Create a timer that will call the 'timer_callback' function every timer_period second.
         timer_period = 0.5  # seconds
