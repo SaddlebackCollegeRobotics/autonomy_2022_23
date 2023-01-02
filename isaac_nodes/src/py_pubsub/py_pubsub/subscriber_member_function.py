@@ -12,14 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import numpy as np
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
-from sensor_msgs.msg import Image
+from geometry_msgs.msg import PoseWithCovarianceStamped
+from std_msgs.msg import Header
+
+from nav_msgs.msg import Path
 
 import cv2
-import cv_bridge
 
 class MinimalSubscriber(Node):
 
@@ -28,32 +30,90 @@ class MinimalSubscriber(Node):
         # Give the node a name.
         super().__init__('minimal_subscriber')
 
-        self.bridge = cv_bridge.CvBridge()
+        # # Subscribe to the topic 'topic'. Callback gets called when a message is received.
+        # self.subscription = self.create_subscription(
+        #     PoseWithCovarianceStamped,
+        #     'visual_slam/tracking/vo_pose_covariance',
+        #     self.setPos_callback,
+        #     10)
+        # self.subscription  # prevent unused variable warning
 
-        # Subscribe to the topic 'topic'. Callback gets called when a message is received.
+        # Subscribe to Path topic
         self.subscription = self.create_subscription(
-            Image,
-            '/zed2i/zed_node/left/image_rect_color',
+            Path,
+            'visual_slam/tracking/slam_path',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
 
+        # draw the path in opencv
+        self.path = Path()
+        self.position = (0,0)
+
+    def draw_path(self, msg):
+
+        # draw the path in opencv
+        self.path = msg
+
+        # create black image
+        img = np.zeros((1024,1024, 3), np.uint8)
+
+        # for first 100 poses
+        
+
+        for pose in self.path.poses[-100:]:
+            x = pose.pose.position.x
+            y = pose.pose.position.y
+            
+            # multiply by scale
+            x = x * 100
+            y = y * 100
+
+            # add offset
+            x = x + 256
+            y = y + 256
+
+            # log x and y
+            # self.get_logger().info('x: "%s"' % x)
+
+            # draw rectangle for each pose
+            cv2.rectangle(img,(int(x),int(y)),(int(x),int(y)),(0,255,0),1)
+            
+            # draw rectangle for current position
+            #xPos = self.position[0] * 100 + 256
+            #yPos = self.position[1] * 100 + 256
+            # convert to int
+            #xPos = int(xPos)
+            #yPos = int(yPos)
+
+            # log x and y
+            #self.get_logger().info('xPos: "%s"' % xPos + 'yPos: "%s"' % yPos)
+
+        return img
+
 
     # This callback definition simply prints an info message to the console, along with the data it received. 
     def listener_callback(self, msg):
-        #self.get_logger().info(str(msg.header.stamp.sec) + "." + str(msg.header.stamp.nanosec) + " " + str(msg.header.frame_id))
-        frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
-        self.get_logger().info(str(msg.header.stamp.sec) + "." + str(msg.header.stamp.nanosec) + " " + str(msg.header.frame_id))
-        cv2.imshow("Image RGB", frame)
-        cv2.waitKey(3)
+        # draw the path in opencv
+        
+        # log
+        #self.get_logger().info('I heard: "%s"' % msg.header.stamp.sec)
+
+        cv2.imshow("Image window", self.draw_path(msg))
+        cv2.waitKey(1)
+        
+    
+    def setPos_callback(self, msg):
+        self.position = (msg.pose.pose.position.x, msg.pose.pose.position.y)
 
 
 def main(args=None):
     rclpy.init(args=args)
 
-    cv2.namedWindow("Image RGB", cv2.WINDOW_NORMAL)
+    cv2.namedWindow("Image window", cv2.WINDOW_NORMAL)
 
     minimal_subscriber = MinimalSubscriber()
+    
     rclpy.spin(minimal_subscriber)
 
     # Destroy the node explicitly

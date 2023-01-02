@@ -35,14 +35,17 @@ def generate_launch_description():
                     'use_sim_time': False,
                     'denoise_input_images': True,
                     'rectified_images': True,
-                    'enable_slam_visualization': True,
-                    'enable_observations_view': True,
-                    'enable_landmarks_view': True,
+                    'enable_slam_visualization': False,
+                    'enable_observations_view': False,
+                    'enable_landmarks_view': False,
                     'enable_debug_mode': False,
                     'debug_dump_path': '/tmp/elbrus',
                     'map_frame': 'map',
                     'odom_frame': 'odom',
-                    'base_frame': 'base_link'
+                    'base_frame': 'base_link',
+                    'enable_imu': True,
+                    'input_imu_frame': 'zed2i_imu_link',
+                    'enable_localization_n_mapping': True
                     }]
     )
 
