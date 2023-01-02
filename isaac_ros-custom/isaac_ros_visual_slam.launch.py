@@ -45,7 +45,9 @@ def generate_launch_description():
                     'base_frame': 'base_link',
                     'enable_imu': True,
                     'input_imu_frame': 'zed2i_imu_link',
-                    'enable_localization_n_mapping': True
+                    'enable_localization_n_mapping': True,
+                    'input_left_camera_frame': 'zed2i_left_camera_frame',
+                    'input_right_camera_frame': 'zed2i_right_camera_frame'
                     }]
     )
 
