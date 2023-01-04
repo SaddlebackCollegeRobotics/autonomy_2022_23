@@ -26,11 +26,11 @@ def generate_launch_description():
     launch_args = [
         DeclareLaunchArgument(
             'featnet_engine_file_path',
-            default_value='',
+            default_value='src/training_models/bi3d/bi3dnet_featnet.plan',
             description='The absolute path to the Bi3D Featnet TensorRT engine plan'),
         DeclareLaunchArgument(
             'segnet_engine_file_path',
-            default_value='',
+            default_value='src/training_models/bi3d/bi3dnet_segnet.plan',
             description='The absolute path to the Bi3D Segnet TensorRT engine plan'),
         DeclareLaunchArgument(
             'rosbag_path',
@@ -96,8 +96,8 @@ def generate_launch_description():
                 'max_disparity_values': max_disparity_values,
                 'use_sim_time': True}],
         remappings=[('bi3d_node/bi3d_output', 'bi3d_mask'),
-                    ('left_image_bi3d', 'rgb_left'),
-                    ('right_image_bi3d', 'rgb_right')]
+                    ('left_image_bi3d', 'prox_seg_node/left_image_rect'),
+                    ('right_image_bi3d', 'prox_seg_node/right_image_rect')]
     )
 
     freespace_segmentation_node = ComposableNode(
