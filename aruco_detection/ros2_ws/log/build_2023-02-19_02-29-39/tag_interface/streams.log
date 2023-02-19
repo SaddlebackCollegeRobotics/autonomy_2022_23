@@ -1,0 +1,47 @@
+[0.074s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface -- -j4 -l4
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_c[0m
+[0.304s] [  3%] Built target tag_interface__cpp
+[0.316s] [ 12%] Built target tag_interface__rosidl_generator_c
+[0.355s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_cpp[0m
+[0.359s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_cpp[0m
+[0.371s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_cpp[0m
+[0.380s] [ 12%] Built target ament_cmake_python_copy_tag_interface
+[0.450s] [ 41%] Built target tag_interface__rosidl_typesupport_cpp
+[0.453s] [ 41%] Built target tag_interface__rosidl_typesupport_fastrtps_cpp
+[0.457s] [ 41%] Built target tag_interface__rosidl_typesupport_introspection_cpp
+[0.474s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c[0m
+[0.509s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c[0m
+[0.527s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c[0m
+[0.551s] [ 51%] Built target tag_interface__rosidl_typesupport_fastrtps_c
+[0.574s] [ 61%] Built target tag_interface__rosidl_typesupport_introspection_c
+[0.602s] [ 70%] Built target tag_interface__rosidl_typesupport_c
+[0.701s] [ 70%] Built target tag_interface
+[0.790s] [ 74%] Built target tag_interface__py
+[0.840s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_py[0m
+[0.912s] [ 80%] Built target tag_interface__rosidl_generator_py
+[0.975s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.976s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c__pyext[0m
+[0.976s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c__pyext[0m
+[1.065s] Traceback (most recent call last):
+[1.065s]   File "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface/ament_cmake_python/tag_interface/setup.py", line 1, in <module>
+[1.066s]     from setuptools import find_packages
+[1.067s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[1.067s] gmake[1]: *** [CMakeFiles/Makefile2:565: CMakeFiles/tag_interface__rosidl_typesupport_c__pyext.dir/all] Interrupt
+[1.068s] gmake[1]: *** [CMakeFiles/Makefile2:536: CMakeFiles/tag_interface__rosidl_typesupport_introspection_c__pyext.dir/all] Interrupt
+[1.068s]     import setuptools.version
+[1.068s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[1.069s]     import pkg_resources
+[1.070s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 78, in <module>
+[1.070s] gmake[1]: *** [CMakeFiles/Makefile2:506: CMakeFiles/tag_interface__rosidl_typesupport_fastrtps_c__pyext.dir/all] Interrupt
+[1.071s]     __import__('pkg_resources.extern.packaging.requirements')
+[1.071s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 61, in <module>
+[1.072s]     VERSION_ONE + ZeroOrMore(COMMA + VERSION_ONE), joinString=",", adjacent=False
+[1.072s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 1839, in __add__
+[1.073s]     return And( [ self, other ] )
+[1.073s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3392, in __init__
+[1.074s]     self.mayReturnEmpty = all(e.mayReturnEmpty for e in self.exprs)
+[1.075s] KeyboardInterrupt
+[1.149s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_tag_interface_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_tag_interface_egg] Interrupt
+[1.149s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_tag_interface_egg.dir/all] Interrupt
+[1.150s] gmake: *** [Makefile:146: all] Interrupt
+[1.155s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface -- -j4 -l4

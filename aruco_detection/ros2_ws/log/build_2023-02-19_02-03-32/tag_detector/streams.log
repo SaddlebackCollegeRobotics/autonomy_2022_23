@@ -1,0 +1,42 @@
+[0.063s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector -- -j4 -l4
+[0.179s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.906s] -- Found rclpy: 3.3.5 (/opt/ros/humble/share/rclpy/cmake)
+[0.908s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.917s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.933s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.472s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.375s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.551s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.666s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.777s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.778s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.779s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.824s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:122 (add_custom_target):
+[4.825s]   add_custom_target cannot create target
+[4.825s]   "ament_cmake_python_copy_tag_detector" because another target with the same
+[4.826s]   name already exists.  The existing target is a custom target created in
+[4.826s]   source directory
+[4.827s]   "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector".
+[4.827s]   See documentation for policy CMP0002 for more details.
+[4.828s] Call Stack (most recent call first):
+[4.829s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[4.829s]   CMakeLists.txt:26 (ament_python_install_package)
+[4.829s] 
+[4.830s] [0m
+[4.831s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:141 (add_custom_target):
+[4.831s]   add_custom_target cannot create target
+[4.832s]   "ament_cmake_python_build_tag_detector_egg" because another target with the
+[4.832s]   same name already exists.  The existing target is a custom target created
+[4.832s]   in source directory
+[4.833s]   "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector".
+[4.833s]   See documentation for policy CMP0002 for more details.
+[4.834s] Call Stack (most recent call first):
+[4.834s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[4.835s]   CMakeLists.txt:26 (ament_python_install_package)
+[4.835s] 
+[4.835s] [0m
+[4.863s] -- Configuring incomplete, errors occurred!
+[4.863s] See also "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/CMakeOutput.log".
+[4.880s] gmake: *** [Makefile:254: cmake_check_build_system] Error 1
+[4.886s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector -- -j4 -l4

@@ -1,0 +1,172 @@
+[0.079s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface -- -j4 -l4
+[0.262s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_c[0m
+[0.308s] [  2%] Built target tag_interface__cpp
+[0.326s] [ 12%] Built target tag_interface__rosidl_generator_c
+[0.366s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_cpp[0m
+[0.373s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_cpp[0m
+[0.386s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_cpp[0m
+[0.400s] [ 12%] Built target ament_cmake_python_copy_tag_interface
+[0.446s] [ 23%] Built target tag_interface__rosidl_typesupport_fastrtps_cpp
+[0.473s] [ 33%] Built target tag_interface__rosidl_typesupport_cpp
+[0.485s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c[0m
+[0.506s] [ 43%] Built target tag_interface__rosidl_typesupport_introspection_cpp
+[0.517s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c[0m
+[0.537s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c[0m
+[0.585s] [ 53%] Built target tag_interface__rosidl_typesupport_fastrtps_c
+[0.606s] [ 64%] Built target tag_interface__rosidl_typesupport_introspection_c
+[0.626s] [ 74%] Built target tag_interface__rosidl_typesupport_c
+[0.722s] [ 74%] Built target tag_interface
+[0.822s] [ 76%] Built target tag_interface__py
+[0.875s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_py[0m
+[0.956s] [ 84%] Built target tag_interface__rosidl_generator_py
+[1.021s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c__pyext[0m
+[1.022s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.051s] [35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c__pyext[0m
+[1.132s] [ 89%] Built target tag_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.147s] [ 94%] Built target tag_interface__rosidl_typesupport_introspection_c__pyext
+[1.153s] [100%] Built target tag_interface__rosidl_typesupport_c__pyext
+[1.861s] running egg_info
+[1.865s] writing tag_interface.egg-info/PKG-INFO
+[1.866s] writing dependency_links to tag_interface.egg-info/dependency_links.txt
+[1.867s] writing top-level names to tag_interface.egg-info/top_level.txt
+[1.878s] reading manifest file 'tag_interface.egg-info/SOURCES.txt'
+[1.881s] writing manifest file 'tag_interface.egg-info/SOURCES.txt'
+[2.013s] [100%] Built target ament_cmake_python_build_tag_interface_egg
+[2.061s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface -- -j4 -l4
+[2.586s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface
+[2.617s] -- Install configuration: ""
+[2.618s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/rosidl_interfaces/tag_interface
+[2.619s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface
+[2.619s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg
+[2.620s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_generator_c__visibility_control.h
+[2.620s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/coordinate.h
+[2.621s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail
+[2.621s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__type_support.h
+[2.622s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__functions.c
+[2.622s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__functions.h
+[2.623s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__struct.h
+[2.623s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__type_support.h
+[2.624s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__functions.c
+[2.624s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__functions.h
+[2.625s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__struct.h
+[2.625s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/tag.h
+[2.626s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/library_path.sh
+[2.626s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/library_path.dsv
+[2.626s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_generator_c.so
+[2.628s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface
+[2.628s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg
+[2.629s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.629s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail
+[2.630s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_fastrtps_c.h
+[2.630s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h
+[2.632s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_fastrtps_c.so
+[2.633s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface
+[2.634s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg
+[2.634s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.635s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail
+[2.636s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__type_support.c
+[2.636s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_introspection_c.h
+[2.636s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_introspection_c.h
+[2.637s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__type_support.c
+[2.638s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_introspection_c.so
+[2.641s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_c.so
+[2.642s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface
+[2.642s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg
+[2.643s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/tag.hpp
+[2.643s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/coordinate.hpp
+[2.644s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail
+[2.644s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__builder.hpp
+[2.645s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__struct.hpp
+[2.645s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__traits.hpp
+[2.646s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__builder.hpp
+[2.646s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__struct.hpp
+[2.647s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__traits.hpp
+[2.647s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface
+[2.648s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg
+[2.648s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.648s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail
+[2.649s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_fastrtps_cpp.hpp
+[2.650s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/dds_fastrtps
+[2.650s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_fastrtps_cpp.hpp
+[2.651s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_fastrtps_cpp.so
+[2.653s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface
+[2.653s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg
+[2.654s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail
+[2.654s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_introspection_cpp.hpp
+[2.655s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_introspection_cpp.hpp
+[2.655s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__type_support.cpp
+[2.656s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__type_support.cpp
+[2.657s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_introspection_cpp.so
+[2.660s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_cpp.so
+[2.661s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/pythonpath.sh
+[2.662s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/pythonpath.dsv
+[2.662s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info
+[2.663s] -- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[2.665s] -- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/top_level.txt
+[2.666s] -- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.668s] -- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.670s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface
+[2.670s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[2.671s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg
+[2.671s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_tag_s.c
+[2.672s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_coordinate_s.c
+[2.672s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_tag.py
+[2.673s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/__init__.py
+[2.673s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_coordinate.py
+[2.674s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[2.674s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/__init__.py
+[2.675s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/_tag_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.675s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/_tag_interface_s.ep.rosidl_typesupport_introspection_c.c
+[2.675s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/_tag_interface_s.ep.rosidl_typesupport_c.c
+[2.676s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[2.676s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/libtag_interface__rosidl_generator_py.so
+[2.828s] Listing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface'...
+[2.830s] Listing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg'...
+[2.854s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[2.857s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[2.860s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[2.864s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_generator_py.so
+[2.867s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Coordinate.idl
+[2.869s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Tag.idl
+[2.869s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Coordinate.msg
+[2.870s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Tag.msg
+[2.871s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/package_run_dependencies/tag_interface
+[2.871s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/parent_prefix_path/tag_interface
+[2.872s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/ament_prefix_path.sh
+[2.874s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/ament_prefix_path.dsv
+[2.875s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/path.sh
+[2.875s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/path.dsv
+[2.876s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.bash
+[2.877s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.sh
+[2.878s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.zsh
+[2.879s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.dsv
+[2.880s] -- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.dsv
+[2.881s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/packages/tag_interface
+[2.882s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_cExport.cmake
+[2.883s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_cExport-noconfig.cmake
+[2.884s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[2.884s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.886s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cExport.cmake
+[2.886s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.887s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cExport.cmake
+[2.888s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cExport-noconfig.cmake
+[2.889s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_cppExport.cmake
+[2.890s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.891s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.891s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cppExport.cmake
+[2.892s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.893s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cppExport.cmake
+[2.893s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[2.894s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_pyExport.cmake
+[2.895s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_pyExport-noconfig.cmake
+[2.896s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/rosidl_cmake-extras.cmake
+[2.897s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.898s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[2.898s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_targets-extras.cmake
+[2.899s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.900s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.901s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.902s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interfaceConfig.cmake
+[2.902s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interfaceConfig-version.cmake
+[2.903s] -- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.xml
+[2.912s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface

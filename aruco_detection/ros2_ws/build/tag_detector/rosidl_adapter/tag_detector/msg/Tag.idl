@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tag_detector/msg/Tag.msg
+// generated code does not contain a copyright notice
+
+
+module tag_detector {
+  module msg {
+    struct Tag {
+      int64 id;
+
+      int64 top_right;
+
+      int64 top_left;
+
+      int64 bottom_right;
+
+      int64 bottom_left;
+
+      int64 position;
+
+      double distance;
+    };
+  };
+};

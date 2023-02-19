@@ -1,0 +1,46 @@
+[3.230s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detection': PYTHONPATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/prefix_override:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tag_detection build --build-base /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build install --record /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log --single-version-externally-managed
+[4.435s] running egg_info
+[4.438s] creating ../../build/tag_detection/tag_detection.egg-info
+[4.439s] writing ../../build/tag_detection/tag_detection.egg-info/PKG-INFO
+[4.440s] writing dependency_links to ../../build/tag_detection/tag_detection.egg-info/dependency_links.txt
+[4.441s] writing entry points to ../../build/tag_detection/tag_detection.egg-info/entry_points.txt
+[4.442s] writing requirements to ../../build/tag_detection/tag_detection.egg-info/requires.txt
+[4.442s] writing top-level names to ../../build/tag_detection/tag_detection.egg-info/top_level.txt
+[4.443s] writing manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+[4.451s] reading manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+[4.455s] writing manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+[4.456s] running build
+[4.457s] running build_py
+[4.458s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build
+[4.459s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib
+[4.459s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+[4.459s] copying tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+[4.460s] copying tag_detection/tag_subscriber.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+[4.461s] copying tag_detection/__init__.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+[4.462s] copying tag_detection/aruco_dist.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+[4.463s] running install
+[4.465s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.466s]   warnings.warn(
+[4.466s] running install_lib
+[4.469s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+[4.470s] copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+[4.471s] copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/tag_subscriber.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+[4.472s] copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/__init__.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+[4.473s] copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/aruco_dist.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+[4.476s] byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/tag_detector.py to tag_detector.cpython-310.pyc
+[4.481s] byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/tag_subscriber.py to tag_subscriber.cpython-310.pyc
+[4.482s] byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/__init__.py to __init__.cpython-310.pyc
+[4.483s] byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/aruco_dist.py to aruco_dist.cpython-310.pyc
+[4.487s] running install_data
+[4.490s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/share/ament_index
+[4.490s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/share/ament_index/resource_index
+[4.491s] creating /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/share/ament_index/resource_index/packages
+[4.492s] copying resource/tag_detection -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/share/ament_index/resource_index/packages
+[4.492s] copying package.xml -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/share/tag_detection
+[4.493s] running install_egg_info
+[4.499s] Copying ../../build/tag_detection/tag_detection.egg-info to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info
+[4.505s] running install_scripts
+[4.594s] Installing detect_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection
+[4.595s] Installing subscribe_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection
+[4.597s] writing list of installed files to '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log'
+[4.718s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detection' returned '0': PYTHONPATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/prefix_override:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tag_detection build --build-base /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build install --record /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log --single-version-externally-managed

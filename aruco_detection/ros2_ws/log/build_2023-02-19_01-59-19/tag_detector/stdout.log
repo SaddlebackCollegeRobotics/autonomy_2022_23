@@ -1,0 +1,45 @@
+-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclpy: 3.3.5 (/opt/ros/humble/share/rclpy/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector
+Built target ament_cmake_python_copy_tag_detector
+running egg_info
+creating tag_detector.egg-info
+writing tag_detector.egg-info/PKG-INFO
+writing dependency_links to tag_detector.egg-info/dependency_links.txt
+writing top-level names to tag_detector.egg-info/top_level.txt
+writing manifest file 'tag_detector.egg-info/SOURCES.txt'
+reading manifest file 'tag_detector.egg-info/SOURCES.txt'
+writing manifest file 'tag_detector.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_tag_detector_egg
+-- Install configuration: ""
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/environment/pythonpath.sh
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/environment/pythonpath.dsv
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector-0.0.0-py3.10.egg-info
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector/__init__.py
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector/module_to_import.py
+Listing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector'...
+Compiling '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector/__init__.py'...
+Compiling '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/local/lib/python3.10/dist-packages/tag_detector/module_to_import.py'...
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/lib/tag_detector/detect_tag.py
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/ament_index/resource_index/package_run_dependencies/tag_detector
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/ament_index/resource_index/parent_prefix_path/tag_detector
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/environment/ament_prefix_path.sh
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/environment/ament_prefix_path.dsv
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/environment/path.sh
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/environment/path.dsv
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/local_setup.bash
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/local_setup.sh
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/local_setup.zsh
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/local_setup.dsv
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/package.dsv
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/ament_index/resource_index/packages/tag_detector
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/cmake/tag_detectorConfig.cmake
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/cmake/tag_detectorConfig-version.cmake
+-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector/share/tag_detector/package.xml

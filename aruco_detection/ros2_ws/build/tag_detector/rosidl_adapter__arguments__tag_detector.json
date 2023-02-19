@@ -1,0 +1,6 @@
+{
+  "package_name": "tag_detector",
+  "non_idl_tuples": [
+    "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector:msg/Tag.msg"
+  ]
+}

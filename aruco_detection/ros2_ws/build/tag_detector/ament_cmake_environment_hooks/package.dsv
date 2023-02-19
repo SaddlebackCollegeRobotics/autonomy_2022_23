@@ -1,0 +1,4 @@
+source;share/tag_detector/local_setup.bash
+source;share/tag_detector/local_setup.dsv
+source;share/tag_detector/local_setup.sh
+source;share/tag_detector/local_setup.zsh

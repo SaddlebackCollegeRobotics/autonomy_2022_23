@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/tag_detection/tag_detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/tag_detection/tag_detection.egg-info/dependency_links.txt
+writing entry points to ../../build/tag_detection/tag_detection.egg-info/entry_points.txt
+writing requirements to ../../build/tag_detection/tag_detection.egg-info/requires.txt
+writing top-level names to ../../build/tag_detection/tag_detection.egg-info/top_level.txt
+reading manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+copying tag_detection/aruco_driver.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+running install
+running install_lib
+copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/aruco_driver.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/tag_detector.py to tag_detector.cpython-310.pyc
+byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/aruco_driver.py to aruco_driver.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tag_detection/tag_detection.egg-info to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detect_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection
+Installing subscribe_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection
+writing list of installed files to '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log'

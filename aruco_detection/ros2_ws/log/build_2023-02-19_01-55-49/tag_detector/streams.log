@@ -1,0 +1,57 @@
+[0.058s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector -DCMAKE_INSTALL_PREFIX=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector
+[0.358s] -- The C compiler identification is GNU 11.3.0
+[0.647s] -- The CXX compiler identification is GNU 11.3.0
+[0.680s] -- Detecting C compiler ABI info
+[1.026s] -- Detecting C compiler ABI info - done
+[1.058s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.059s] -- Detecting C compile features
+[1.060s] -- Detecting C compile features - done
+[1.074s] -- Detecting CXX compiler ABI info
+[1.456s] -- Detecting CXX compiler ABI info - done
+[1.487s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.488s] -- Detecting CXX compile features
+[1.490s] -- Detecting CXX compile features - done
+[1.515s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.396s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[2.984s] -- Found rclpy: 3.3.5 (/opt/ros/humble/share/rclpy/cmake)
+[3.002s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.028s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.094s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.446s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.884s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.833s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.006s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.122s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[7.144s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[7.272s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[7.272s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.272s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[7.273s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[7.380s] -- Found PythonExtra: .so  
+[7.541s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:122 (add_custom_target):
+[7.541s]   add_custom_target cannot create target
+[7.541s]   "ament_cmake_python_copy_tag_detector" because another target with the same
+[7.542s]   name already exists.  The existing target is a custom target created in
+[7.542s]   source directory
+[7.543s]   "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector".
+[7.543s]   See documentation for policy CMP0002 for more details.
+[7.543s] Call Stack (most recent call first):
+[7.543s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[7.544s]   CMakeLists.txt:26 (ament_python_install_package)
+[7.544s] 
+[7.544s] [0m
+[7.545s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:141 (add_custom_target):
+[7.545s]   add_custom_target cannot create target
+[7.546s]   "ament_cmake_python_build_tag_detector_egg" because another target with the
+[7.546s]   same name already exists.  The existing target is a custom target created
+[7.546s]   in source directory
+[7.546s]   "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector".
+[7.547s]   See documentation for policy CMP0002 for more details.
+[7.547s] Call Stack (most recent call first):
+[7.548s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[7.548s]   CMakeLists.txt:26 (ament_python_install_package)
+[7.548s] 
+[7.549s] [0m
+[7.592s] -- Configuring incomplete, errors occurred!
+[7.593s] See also "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/CMakeOutput.log".
+[7.614s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector -DCMAKE_INSTALL_PREFIX=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector

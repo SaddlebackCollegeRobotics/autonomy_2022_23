@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tag_interface/msg/Tag.msg
+// generated code does not contain a copyright notice
+
+#include "tag_interface/msg/Coordinate.idl"
+
+module tag_interface {
+  module msg {
+    struct Tag {
+      sequence<int64> id;
+
+      sequence<tag_interface::msg::Coordinate> top_right;
+
+      sequence<tag_interface::msg::Coordinate> top_left;
+
+      sequence<tag_interface::msg::Coordinate> bottom_right;
+
+      sequence<tag_interface::msg::Coordinate> bottom_left;
+
+      sequence<int64> position;
+
+      sequence<double> distance;
+    };
+  };
+};

@@ -1,0 +1,11 @@
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/uninstall.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/tag_detector_uninstall.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/ament_cmake_python_copy_tag_detector.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/ament_cmake_python_build_tag_detector_egg.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/test.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/edit_cache.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/rebuild_cache.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/list_install_components.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/install.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/install/local.dir
+/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/install/strip.dir

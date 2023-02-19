@@ -1,0 +1,9 @@
+setup.py
+tag_interface/__init__.py
+tag_interface.egg-info/PKG-INFO
+tag_interface.egg-info/SOURCES.txt
+tag_interface.egg-info/dependency_links.txt
+tag_interface.egg-info/top_level.txt
+tag_interface/msg/__init__.py
+tag_interface/msg/_coordinate.py
+tag_interface/msg/_tag.py

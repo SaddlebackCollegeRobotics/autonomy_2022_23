@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.001979] (-) JobUnselected: {'identifier': 'tag_detector'}
+[0.002692] (-) JobUnselected: {'identifier': 'tag_interface'}
+[0.005053] (tag_detection) JobQueued: {'identifier': 'tag_detection', 'dependencies': OrderedDict([('tag_interface', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface')])}
+[0.005319] (tag_detection) JobStarted: {'identifier': 'tag_detection'}
+[0.099167] (-) TimerEvent: {}
+[0.200171] (-) TimerEvent: {}
+[0.300912] (-) TimerEvent: {}
+[0.401644] (-) TimerEvent: {}
+[0.502403] (-) TimerEvent: {}
+[0.603115] (-) TimerEvent: {}
+[0.703904] (-) TimerEvent: {}
+[0.804610] (-) TimerEvent: {}
+[0.905314] (-) TimerEvent: {}
+[1.006086] (-) TimerEvent: {}
+[1.106949] (-) TimerEvent: {}
+[1.207724] (-) TimerEvent: {}
+[1.308572] (-) TimerEvent: {}
+[1.409837] (-) TimerEvent: {}
+[1.510662] (-) TimerEvent: {}
+[1.611410] (-) TimerEvent: {}
+[1.712227] (-) TimerEvent: {}
+[1.812962] (-) TimerEvent: {}
+[1.913661] (-) TimerEvent: {}
+[2.014411] (-) TimerEvent: {}
+[2.115227] (-) TimerEvent: {}
+[2.215978] (-) TimerEvent: {}
+[2.316652] (-) TimerEvent: {}
+[2.417378] (-) TimerEvent: {}
+[2.518103] (-) TimerEvent: {}
+[2.618823] (-) TimerEvent: {}
+[2.719612] (-) TimerEvent: {}
+[2.820369] (-) TimerEvent: {}
+[2.921305] (-) TimerEvent: {}
+[2.996223] (tag_detection) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/tag_detection', 'build', '--build-base', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build', 'install', '--record', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log', '--single-version-externally-managed'], 'cwd': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detection', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cam', 'SSH_CLIENT': '192.168.68.138 59827 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cam', 'OLDPWD': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.75.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-6c479241-8bc0-42b4-bbd6-7b7c3b26aeb7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/humble/', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cam', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-c64f98a2d7.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection', 'SSH_CONNECTION': '192.168.68.138 59827 192.168.68.142 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/prefix_override:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface'}, 'shell': False}
+[3.021509] (-) TimerEvent: {}
+[3.122504] (-) TimerEvent: {}
+[3.223358] (-) TimerEvent: {}
+[3.324162] (-) TimerEvent: {}
+[3.424974] (-) TimerEvent: {}
+[3.525686] (-) TimerEvent: {}
+[3.626426] (-) TimerEvent: {}
+[3.727249] (-) TimerEvent: {}
+[3.827984] (-) TimerEvent: {}
+[3.928721] (-) TimerEvent: {}
+[4.029439] (-) TimerEvent: {}
+[4.130165] (-) TimerEvent: {}
+[4.209183] (tag_detection) StdoutLine: {'line': b'running egg_info\n'}
+[4.212247] (tag_detection) StdoutLine: {'line': b'writing ../../build/tag_detection/tag_detection.egg-info/PKG-INFO\n'}
+[4.213470] (tag_detection) StdoutLine: {'line': b'writing dependency_links to ../../build/tag_detection/tag_detection.egg-info/dependency_links.txt\n'}
+[4.214416] (tag_detection) StdoutLine: {'line': b'writing entry points to ../../build/tag_detection/tag_detection.egg-info/entry_points.txt\n'}
+[4.215409] (tag_detection) StdoutLine: {'line': b'writing requirements to ../../build/tag_detection/tag_detection.egg-info/requires.txt\n'}
+[4.216131] (tag_detection) StdoutLine: {'line': b'writing top-level names to ../../build/tag_detection/tag_detection.egg-info/top_level.txt\n'}
+[4.225080] (tag_detection) StdoutLine: {'line': b"reading manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'\n"}
+[4.229900] (tag_detection) StdoutLine: {'line': b"writing manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'\n"}
+[4.230503] (-) TimerEvent: {}
+[4.231061] (tag_detection) StdoutLine: {'line': b'running build\n'}
+[4.231792] (tag_detection) StdoutLine: {'line': b'running build_py\n'}
+[4.234022] (tag_detection) StdoutLine: {'line': b'copying tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection\n'}
+[4.235038] (tag_detection) StdoutLine: {'line': b'running install\n'}
+[4.235776] (tag_detection) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.236353] (tag_detection) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.237090] (tag_detection) StdoutLine: {'line': b'running install_lib\n'}
+[4.241297] (tag_detection) StdoutLine: {'line': b'copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection\n'}
+[4.245463] (tag_detection) StdoutLine: {'line': b'byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/tag_detector.py to tag_detector.cpython-310.pyc\n'}
+[4.252090] (tag_detection) StdoutLine: {'line': b'running install_data\n'}
+[4.254770] (tag_detection) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.261837] (tag_detection) StdoutLine: {'line': b"removing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.263930] (tag_detection) StdoutLine: {'line': b'Copying ../../build/tag_detection/tag_detection.egg-info to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info\n'}
+[4.270916] (tag_detection) StdoutLine: {'line': b'running install_scripts\n'}
+[4.330728] (-) TimerEvent: {}
+[4.360397] (tag_detection) StdoutLine: {'line': b'Installing detect_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection\n'}
+[4.361423] (tag_detection) StdoutLine: {'line': b'Installing subscribe_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection\n'}
+[4.363548] (tag_detection) StdoutLine: {'line': b"writing list of installed files to '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log'\n"}
+[4.431031] (-) TimerEvent: {}
+[4.478783] (tag_detection) CommandEnded: {'returncode': 0}
+[4.533059] (-) TimerEvent: {}
+[4.553670] (tag_detection) JobEnded: {'identifier': 'tag_detection', 'rc': 0}
+[4.557147] (-) EventReactorShutdown: {}

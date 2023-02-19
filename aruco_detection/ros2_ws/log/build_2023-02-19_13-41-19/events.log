@@ -1,0 +1,481 @@
+[0.000000] (-) TimerEvent: {}
+[0.001996] (-) JobUnselected: {'identifier': 'tag_detection'}
+[0.002861] (tag_interface) JobQueued: {'identifier': 'tag_interface', 'dependencies': OrderedDict()}
+[0.005450] (tag_interface) JobStarted: {'identifier': 'tag_interface'}
+[0.058872] (tag_interface) JobProgress: {'identifier': 'tag_interface', 'progress': 'cmake'}
+[0.062264] (tag_interface) JobProgress: {'identifier': 'tag_interface', 'progress': 'build'}
+[0.065488] (tag_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface', '--', '-j4', '-l4'], 'cwd': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cam'), ('SSH_CLIENT', '192.168.68.138 59827 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cam'), ('OLDPWD', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6c479241-8bc0-42b4-bbd6-7b7c3b26aeb7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cam'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c64f98a2d7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface'), ('SSH_CONNECTION', '192.168.68.138 59827 192.168.68.142 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099112] (-) TimerEvent: {}
+[0.193187] (tag_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199304] (-) TimerEvent: {}
+[0.300015] (-) TimerEvent: {}
+[0.400737] (-) TimerEvent: {}
+[0.501425] (-) TimerEvent: {}
+[0.602204] (-) TimerEvent: {}
+[0.703077] (-) TimerEvent: {}
+[0.803855] (-) TimerEvent: {}
+[0.904632] (-) TimerEvent: {}
+[0.912757] (tag_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.920193] (tag_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.933366] (tag_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.004807] (-) TimerEvent: {}
+[1.106112] (-) TimerEvent: {}
+[1.138517] (tag_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.206325] (-) TimerEvent: {}
+[1.274672] (tag_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.306566] (-) TimerEvent: {}
+[1.407482] (-) TimerEvent: {}
+[1.508279] (-) TimerEvent: {}
+[1.609051] (-) TimerEvent: {}
+[1.709821] (-) TimerEvent: {}
+[1.810638] (-) TimerEvent: {}
+[1.911371] (-) TimerEvent: {}
+[2.012133] (-) TimerEvent: {}
+[2.112872] (-) TimerEvent: {}
+[2.213660] (-) TimerEvent: {}
+[2.314479] (-) TimerEvent: {}
+[2.415299] (-) TimerEvent: {}
+[2.502797] (tag_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.515484] (-) TimerEvent: {}
+[2.616262] (-) TimerEvent: {}
+[2.717102] (-) TimerEvent: {}
+[2.817986] (-) TimerEvent: {}
+[2.918728] (-) TimerEvent: {}
+[3.019569] (-) TimerEvent: {}
+[3.120375] (-) TimerEvent: {}
+[3.221232] (-) TimerEvent: {}
+[3.321993] (-) TimerEvent: {}
+[3.388953] (tag_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.422198] (-) TimerEvent: {}
+[3.522980] (-) TimerEvent: {}
+[3.623951] (-) TimerEvent: {}
+[3.724829] (-) TimerEvent: {}
+[3.825797] (-) TimerEvent: {}
+[3.926515] (-) TimerEvent: {}
+[4.027351] (-) TimerEvent: {}
+[4.128300] (-) TimerEvent: {}
+[4.229085] (-) TimerEvent: {}
+[4.329780] (-) TimerEvent: {}
+[4.430549] (-) TimerEvent: {}
+[4.531292] (-) TimerEvent: {}
+[4.575793] (tag_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.631463] (-) TimerEvent: {}
+[4.690110] (tag_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.731646] (-) TimerEvent: {}
+[4.802558] (tag_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.803427] (tag_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.803969] (tag_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[4.831876] (-) TimerEvent: {}
+[4.877657] (tag_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.889350] (tag_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.913154] (tag_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.932045] (-) TimerEvent: {}
+[5.032792] (-) TimerEvent: {}
+[5.121496] (tag_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[5.132958] (-) TimerEvent: {}
+[5.145973] (tag_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface\n'}
+[5.233195] (-) TimerEvent: {}
+[5.262630] (tag_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.310041] (tag_interface) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.333357] (-) TimerEvent: {}
+[5.365925] (tag_interface) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_tag_interface\n'}
+[5.433561] (-) TimerEvent: {}
+[5.534987] (-) TimerEvent: {}
+[5.636313] (-) TimerEvent: {}
+[5.742004] (-) TimerEvent: {}
+[5.843418] (-) TimerEvent: {}
+[5.944733] (-) TimerEvent: {}
+[6.046101] (-) TimerEvent: {}
+[6.147623] (-) TimerEvent: {}
+[6.249030] (-) TimerEvent: {}
+[6.349780] (-) TimerEvent: {}
+[6.451186] (-) TimerEvent: {}
+[6.551932] (-) TimerEvent: {}
+[6.653131] (-) TimerEvent: {}
+[6.754446] (-) TimerEvent: {}
+[6.856522] (-) TimerEvent: {}
+[6.958286] (-) TimerEvent: {}
+[7.048958] (tag_interface) StdoutLine: {'line': b'[  5%] Built target tag_interface__cpp\n'}
+[7.056506] (tag_interface) StdoutLine: {'line': b'running egg_info\n'}
+[7.058510] (-) TimerEvent: {}
+[7.063960] (tag_interface) StdoutLine: {'line': b'writing tag_interface.egg-info/PKG-INFO\n'}
+[7.067459] (tag_interface) StdoutLine: {'line': b'writing dependency_links to tag_interface.egg-info/dependency_links.txt\n'}
+[7.071250] (tag_interface) StdoutLine: {'line': b'writing top-level names to tag_interface.egg-info/top_level.txt\n'}
+[7.082515] (tag_interface) StdoutLine: {'line': b"reading manifest file 'tag_interface.egg-info/SOURCES.txt'\n"}
+[7.089868] (tag_interface) StdoutLine: {'line': b"writing manifest file 'tag_interface.egg-info/SOURCES.txt'\n"}
+[7.134877] (tag_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.158825] (-) TimerEvent: {}
+[7.240387] (tag_interface) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.247895] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_c\x1b[0m\n'}
+[7.259550] (-) TimerEvent: {}
+[7.267677] (tag_interface) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_tag_interface_egg\n'}
+[7.317335] (tag_interface) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_generator_c.dir/rosidl_generator_c/tag_interface/msg/detail/coordinate__functions.c.o\x1b[0m\n'}
+[7.326762] (tag_interface) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.359778] (-) TimerEvent: {}
+[7.460722] (-) TimerEvent: {}
+[7.561666] (-) TimerEvent: {}
+[7.642673] (tag_interface) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_generator_c.dir/rosidl_generator_c/tag_interface/msg/detail/tag__functions.c.o\x1b[0m\n'}
+[7.661930] (-) TimerEvent: {}
+[7.762859] (-) TimerEvent: {}
+[7.864411] (-) TimerEvent: {}
+[7.965357] (-) TimerEvent: {}
+[7.969574] (tag_interface) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libtag_interface__rosidl_generator_c.so\x1b[0m\n'}
+[8.065679] (-) TimerEvent: {}
+[8.166680] (-) TimerEvent: {}
+[8.176761] (tag_interface) StdoutLine: {'line': b'[ 20%] Built target tag_interface__rosidl_generator_c\n'}
+[8.229735] (tag_interface) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.266968] (-) TimerEvent: {}
+[8.367788] (-) TimerEvent: {}
+[8.468742] (-) TimerEvent: {}
+[8.569632] (-) TimerEvent: {}
+[8.673784] (-) TimerEvent: {}
+[8.775451] (-) TimerEvent: {}
+[8.878155] (-) TimerEvent: {}
+[8.947095] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[8.978370] (-) TimerEvent: {}
+[9.029612] (tag_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tag_interface/msg/coordinate__type_support.cpp.o\x1b[0m\n'}
+[9.041156] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[9.078719] (-) TimerEvent: {}
+[9.134039] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[9.153213] (tag_interface) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tag_interface/msg/detail/dds_fastrtps/coordinate__type_support.cpp.o\x1b[0m\n'}
+[9.178955] (-) TimerEvent: {}
+[9.212071] (tag_interface) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tag_interface/msg/detail/coordinate__type_support.cpp.o\x1b[0m\n'}
+[9.279157] (-) TimerEvent: {}
+[9.379946] (-) TimerEvent: {}
+[9.480803] (-) TimerEvent: {}
+[9.581641] (-) TimerEvent: {}
+[9.682666] (-) TimerEvent: {}
+[9.783863] (-) TimerEvent: {}
+[9.884973] (-) TimerEvent: {}
+[9.986023] (-) TimerEvent: {}
+[10.078571] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[10.086330] (-) TimerEvent: {}
+[10.169867] (tag_interface) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tag_interface/msg/detail/coordinate__type_support_c.cpp.o\x1b[0m\n'}
+[10.186637] (-) TimerEvent: {}
+[10.287697] (-) TimerEvent: {}
+[10.388671] (-) TimerEvent: {}
+[10.489641] (-) TimerEvent: {}
+[10.590603] (-) TimerEvent: {}
+[10.691611] (-) TimerEvent: {}
+[10.792664] (-) TimerEvent: {}
+[10.810348] (tag_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tag_interface/msg/tag__type_support.cpp.o\x1b[0m\n'}
+[10.892930] (-) TimerEvent: {}
+[10.994115] (-) TimerEvent: {}
+[11.095943] (-) TimerEvent: {}
+[11.197137] (-) TimerEvent: {}
+[11.298412] (-) TimerEvent: {}
+[11.400053] (-) TimerEvent: {}
+[11.503189] (-) TimerEvent: {}
+[11.605615] (-) TimerEvent: {}
+[11.708199] (-) TimerEvent: {}
+[11.809148] (tag_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tag_interface/msg/detail/dds_fastrtps/tag__type_support.cpp.o\x1b[0m\n'}
+[11.810370] (-) TimerEvent: {}
+[11.897190] (tag_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tag_interface/msg/detail/tag__type_support.cpp.o\x1b[0m\n'}
+[11.910587] (-) TimerEvent: {}
+[12.013110] (-) TimerEvent: {}
+[12.115889] (-) TimerEvent: {}
+[12.218334] (-) TimerEvent: {}
+[12.321248] (-) TimerEvent: {}
+[12.424081] (-) TimerEvent: {}
+[12.526981] (-) TimerEvent: {}
+[12.529247] (tag_interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tag_interface/msg/detail/tag__type_support_c.cpp.o\x1b[0m\n'}
+[12.627498] (-) TimerEvent: {}
+[12.728561] (-) TimerEvent: {}
+[12.748640] (tag_interface) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libtag_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.828852] (-) TimerEvent: {}
+[12.931339] (-) TimerEvent: {}
+[12.978063] (tag_interface) StdoutLine: {'line': b'[ 46%] Built target tag_interface__rosidl_typesupport_cpp\n'}
+[13.031571] (-) TimerEvent: {}
+[13.042106] (tag_interface) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.131873] (-) TimerEvent: {}
+[13.234523] (-) TimerEvent: {}
+[13.335758] (-) TimerEvent: {}
+[13.436974] (-) TimerEvent: {}
+[13.538209] (-) TimerEvent: {}
+[13.639195] (-) TimerEvent: {}
+[13.742375] (-) TimerEvent: {}
+[13.845783] (-) TimerEvent: {}
+[13.948891] (-) TimerEvent: {}
+[14.051564] (-) TimerEvent: {}
+[14.152916] (-) TimerEvent: {}
+[14.254198] (-) TimerEvent: {}
+[14.355292] (-) TimerEvent: {}
+[14.456408] (-) TimerEvent: {}
+[14.557484] (-) TimerEvent: {}
+[14.658582] (-) TimerEvent: {}
+[14.759864] (-) TimerEvent: {}
+[14.860936] (-) TimerEvent: {}
+[14.962175] (-) TimerEvent: {}
+[15.002138] (tag_interface) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libtag_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.062419] (-) TimerEvent: {}
+[15.075735] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[15.162666] (-) TimerEvent: {}
+[15.184830] (tag_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tag_interface/msg/detail/coordinate__type_support.c.o\x1b[0m\n'}
+[15.262996] (-) TimerEvent: {}
+[15.321375] (tag_interface) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libtag_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[15.363158] (-) TimerEvent: {}
+[15.434960] (tag_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tag_interface/msg/detail/tag__type_support.c.o\x1b[0m\n'}
+[15.463484] (-) TimerEvent: {}
+[15.466401] (tag_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libtag_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[15.489436] (tag_interface) StdoutLine: {'line': b'[ 61%] Built target tag_interface__rosidl_typesupport_fastrtps_c\n'}
+[15.545822] (tag_interface) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.563712] (-) TimerEvent: {}
+[15.664997] (-) TimerEvent: {}
+[15.766595] (-) TimerEvent: {}
+[15.824835] (tag_interface) StdoutLine: {'line': b'[ 64%] Built target tag_interface__rosidl_typesupport_introspection_cpp\n'}
+[15.837802] (tag_interface) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libtag_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[15.866804] (-) TimerEvent: {}
+[15.893720] (tag_interface) StdoutLine: {'line': b'[ 66%] Built target tag_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[15.967041] (-) TimerEvent: {}
+[15.998091] (tag_interface) StdoutLine: {'line': b'[ 66%] Built target tag_interface__rosidl_typesupport_introspection_c\n'}
+[16.067211] (-) TimerEvent: {}
+[16.167998] (-) TimerEvent: {}
+[16.268810] (-) TimerEvent: {}
+[16.369560] (-) TimerEvent: {}
+[16.470322] (-) TimerEvent: {}
+[16.571079] (-) TimerEvent: {}
+[16.671813] (-) TimerEvent: {}
+[16.772548] (-) TimerEvent: {}
+[16.836474] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c\x1b[0m\n'}
+[16.872838] (-) TimerEvent: {}
+[16.893085] (tag_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/tag_interface/msg/coordinate__type_support.cpp.o\x1b[0m\n'}
+[16.897328] (tag_interface) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/tag_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/tag_interface/msg/tag__type_support.cpp.o\x1b[0m\n'}
+[16.973036] (-) TimerEvent: {}
+[17.061924] (tag_interface) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libtag_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[17.073254] (-) TimerEvent: {}
+[17.174170] (-) TimerEvent: {}
+[17.245681] (tag_interface) StdoutLine: {'line': b'[ 74%] Built target tag_interface__rosidl_typesupport_c\n'}
+[17.274412] (-) TimerEvent: {}
+[17.341317] (tag_interface) StdoutLine: {'line': b'[ 74%] Built target tag_interface\n'}
+[17.374806] (-) TimerEvent: {}
+[17.438770] (tag_interface) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[17.474990] (-) TimerEvent: {}
+[17.575711] (-) TimerEvent: {}
+[17.676536] (-) TimerEvent: {}
+[17.777434] (-) TimerEvent: {}
+[17.878155] (-) TimerEvent: {}
+[17.979008] (-) TimerEvent: {}
+[18.079745] (-) TimerEvent: {}
+[18.180470] (-) TimerEvent: {}
+[18.281235] (-) TimerEvent: {}
+[18.381957] (-) TimerEvent: {}
+[18.482678] (-) TimerEvent: {}
+[18.583462] (-) TimerEvent: {}
+[18.684432] (-) TimerEvent: {}
+[18.785189] (-) TimerEvent: {}
+[18.885886] (-) TimerEvent: {}
+[18.986602] (-) TimerEvent: {}
+[19.087433] (-) TimerEvent: {}
+[19.188134] (-) TimerEvent: {}
+[19.288955] (-) TimerEvent: {}
+[19.390029] (-) TimerEvent: {}
+[19.391203] (tag_interface) StdoutLine: {'line': b'[ 76%] Built target tag_interface__py\n'}
+[19.439580] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_py\x1b[0m\n'}
+[19.490217] (-) TimerEvent: {}
+[19.517683] (tag_interface) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_generator_py.dir/rosidl_generator_py/tag_interface/msg/_coordinate_s.c.o\x1b[0m\n'}
+[19.520553] (tag_interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_generator_py.dir/rosidl_generator_py/tag_interface/msg/_tag_s.c.o\x1b[0m\n'}
+[19.590466] (-) TimerEvent: {}
+[19.693246] (-) TimerEvent: {}
+[19.797113] (-) TimerEvent: {}
+[19.901936] (-) TimerEvent: {}
+[20.004075] (-) TimerEvent: {}
+[20.104943] (-) TimerEvent: {}
+[20.197893] (tag_interface) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tag_interface/libtag_interface__rosidl_generator_py.so\x1b[0m\n'}
+[20.205143] (-) TimerEvent: {}
+[20.305970] (-) TimerEvent: {}
+[20.395389] (tag_interface) StdoutLine: {'line': b'[ 84%] Built target tag_interface__rosidl_generator_py\n'}
+[20.406186] (-) TimerEvent: {}
+[20.448055] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[20.448816] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[20.451573] (tag_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[20.506505] (-) TimerEvent: {}
+[20.520966] (tag_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tag_interface/_tag_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[20.525964] (tag_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tag_interface/_tag_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[20.527799] (tag_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tag_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tag_interface/_tag_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[20.606729] (-) TimerEvent: {}
+[20.710830] (-) TimerEvent: {}
+[20.814872] (-) TimerEvent: {}
+[20.918685] (-) TimerEvent: {}
+[21.022855] (-) TimerEvent: {}
+[21.071483] (tag_interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tag_interface/tag_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[21.100432] (tag_interface) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tag_interface/tag_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[21.123378] (-) TimerEvent: {}
+[21.175325] (tag_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tag_interface/tag_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[21.223724] (-) TimerEvent: {}
+[21.277827] (tag_interface) StdoutLine: {'line': b'[100%] Built target tag_interface__rosidl_typesupport_c__pyext\n'}
+[21.301971] (tag_interface) StdoutLine: {'line': b'[100%] Built target tag_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[21.323943] (-) TimerEvent: {}
+[21.400007] (tag_interface) StdoutLine: {'line': b'[100%] Built target tag_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[21.424204] (-) TimerEvent: {}
+[21.447729] (tag_interface) CommandEnded: {'returncode': 0}
+[21.524381] (-) TimerEvent: {}
+[21.625208] (-) TimerEvent: {}
+[21.725922] (-) TimerEvent: {}
+[21.826739] (-) TimerEvent: {}
+[21.924763] (tag_interface) JobProgress: {'identifier': 'tag_interface', 'progress': 'install'}
+[21.927688] (-) TimerEvent: {}
+[21.960312] (tag_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface'], 'cwd': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cam'), ('SSH_CLIENT', '192.168.68.138 59827 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cam'), ('OLDPWD', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6c479241-8bc0-42b4-bbd6-7b7c3b26aeb7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cam'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c64f98a2d7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface'), ('SSH_CONNECTION', '192.168.68.138 59827 192.168.68.142 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.998198] (tag_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.999054] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/rosidl_interfaces/tag_interface\n'}
+[21.999626] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface\n'}
+[22.000207] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg\n'}
+[22.000781] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[22.001190] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/coordinate.h\n'}
+[22.002282] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail\n'}
+[22.002946] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__type_support.h\n'}
+[22.004906] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__functions.c\n'}
+[22.006521] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__functions.h\n'}
+[22.008143] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__struct.h\n'}
+[22.009681] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__type_support.h\n'}
+[22.011297] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__functions.c\n'}
+[22.012944] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__functions.h\n'}
+[22.014563] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__struct.h\n'}
+[22.016114] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/tag.h\n'}
+[22.017830] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/library_path.sh\n'}
+[22.018491] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/library_path.dsv\n'}
+[22.021073] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_generator_c.so\n'}
+[22.024328] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_generator_c.so" to ""\n'}
+[22.024950] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface\n'}
+[22.025441] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg\n'}
+[22.025936] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[22.026439] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail\n'}
+[22.026890] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_fastrtps_c.h\n'}
+[22.027799] (-) TimerEvent: {}
+[22.029386] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h\n'}
+[22.031889] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[22.035433] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[22.036116] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface\n'}
+[22.036614] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg\n'}
+[22.037096] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[22.037574] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail\n'}
+[22.038180] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__type_support.c\n'}
+[22.040213] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_introspection_c.h\n'}
+[22.041955] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_introspection_c.h\n'}
+[22.043781] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__type_support.c\n'}
+[22.046633] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_introspection_c.so\n'}
+[22.050106] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[22.051392] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_c.so\n'}
+[22.054406] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_c.so" to ""\n'}
+[22.055017] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface\n'}
+[22.055558] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg\n'}
+[22.056065] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/tag.hpp\n'}
+[22.057478] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/coordinate.hpp\n'}
+[22.058868] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail\n'}
+[22.059518] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__builder.hpp\n'}
+[22.061090] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__struct.hpp\n'}
+[22.062663] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__traits.hpp\n'}
+[22.064328] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__builder.hpp\n'}
+[22.065829] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__struct.hpp\n'}
+[22.067653] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__traits.hpp\n'}
+[22.069316] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface\n'}
+[22.069893] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg\n'}
+[22.070361] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[22.070932] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail\n'}
+[22.071474] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.073038] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/dds_fastrtps\n'}
+[22.073663] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[22.076711] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[22.081087] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[22.081839] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface\n'}
+[22.082468] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg\n'}
+[22.082846] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail\n'}
+[22.083392] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.084961] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__rosidl_typesupport_introspection_cpp.hpp\n'}
+[22.086673] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/coordinate__type_support.cpp\n'}
+[22.088409] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/include/tag_interface/tag_interface/msg/detail/tag__type_support.cpp\n'}
+[22.091467] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[22.095711] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[22.097025] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_cpp.so\n'}
+[22.100069] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[22.100679] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/pythonpath.sh\n'}
+[22.101169] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/pythonpath.dsv\n'}
+[22.102704] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info\n'}
+[22.103345] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[22.105004] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[22.106623] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[22.108546] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[22.110260] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface\n'}
+[22.111051] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[22.112913] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg\n'}
+[22.113542] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_tag_s.c\n'}
+[22.115293] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_coordinate_s.c\n'}
+[22.116895] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_tag.py\n'}
+[22.118534] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/__init__.py\n'}
+[22.120206] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_coordinate.py\n'}
+[22.121898] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[22.123809] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/__init__.py\n'}
+[22.125225] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/_tag_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[22.127096] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/_tag_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[22.127957] (-) TimerEvent: {}
+[22.129192] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/_tag_interface_s.ep.rosidl_typesupport_c.c\n'}
+[22.131207] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[22.133005] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/libtag_interface__rosidl_generator_py.so\n'}
+[22.228135] (-) TimerEvent: {}
+[22.305902] (tag_interface) StdoutLine: {'line': b"Listing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface'...\n"}
+[22.307336] (tag_interface) StdoutLine: {'line': b"Compiling '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/__init__.py'...\n"}
+[22.308435] (tag_interface) StdoutLine: {'line': b"Listing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg'...\n"}
+[22.309424] (tag_interface) StdoutLine: {'line': b"Compiling '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/__init__.py'...\n"}
+[22.310454] (tag_interface) StdoutLine: {'line': b"Compiling '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_coordinate.py'...\n"}
+[22.311821] (tag_interface) StdoutLine: {'line': b"Compiling '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/msg/_tag.py'...\n"}
+[22.328400] (-) TimerEvent: {}
+[22.332346] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[22.335794] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[22.337666] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[22.341085] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[22.342851] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[22.346227] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages/tag_interface/tag_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[22.347751] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_generator_py.so\n'}
+[22.351248] (tag_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/libtag_interface__rosidl_generator_py.so" to ""\n'}
+[22.351970] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Coordinate.idl\n'}
+[22.352509] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Tag.idl\n'}
+[22.353884] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Coordinate.msg\n'}
+[22.354845] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/msg/Tag.msg\n'}
+[22.356411] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/package_run_dependencies/tag_interface\n'}
+[22.357794] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/parent_prefix_path/tag_interface\n'}
+[22.358432] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/ament_prefix_path.sh\n'}
+[22.358854] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/ament_prefix_path.dsv\n'}
+[22.359842] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/path.sh\n'}
+[22.360436] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/environment/path.dsv\n'}
+[22.362136] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.bash\n'}
+[22.363937] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.sh\n'}
+[22.364614] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.zsh\n'}
+[22.365118] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/local_setup.dsv\n'}
+[22.366610] (tag_interface) StdoutLine: {'line': b'-- Installing: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.dsv\n'}
+[22.368316] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/ament_index/resource_index/packages/tag_interface\n'}
+[22.369308] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_cExport.cmake\n'}
+[22.369973] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[22.371117] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[22.371780] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[22.372874] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[22.373518] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[22.374511] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cExport.cmake\n'}
+[22.375280] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[22.376266] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_cppExport.cmake\n'}
+[22.377320] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[22.377916] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[22.379141] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[22.379837] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[22.380928] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cppExport.cmake\n'}
+[22.381501] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[22.382559] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_pyExport.cmake\n'}
+[22.383166] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/export_tag_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[22.383736] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[22.384301] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.384852] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.385449] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.386017] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[22.386590] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.387442] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[22.388027] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interfaceConfig.cmake\n'}
+[22.388548] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/cmake/tag_interfaceConfig-version.cmake\n'}
+[22.389070] (tag_interface) StdoutLine: {'line': b'-- Up-to-date: /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.xml\n'}
+[22.396715] (tag_interface) CommandEnded: {'returncode': 0}
+[22.428567] (-) TimerEvent: {}
+[22.530294] (-) TimerEvent: {}
+[22.631144] (-) TimerEvent: {}
+[22.731848] (-) TimerEvent: {}
+[22.832628] (-) TimerEvent: {}
+[22.933337] (-) TimerEvent: {}
+[23.034448] (-) TimerEvent: {}
+[23.044906] (tag_interface) JobEnded: {'identifier': 'tag_interface', 'rc': 0}
+[23.048817] (-) EventReactorShutdown: {}

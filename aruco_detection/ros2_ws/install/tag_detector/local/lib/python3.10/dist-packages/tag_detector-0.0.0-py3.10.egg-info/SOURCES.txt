@@ -1,0 +1,7 @@
+setup.py
+tag_detector/__init__.py
+tag_detector/module_to_import.py
+tag_detector.egg-info/PKG-INFO
+tag_detector.egg-info/SOURCES.txt
+tag_detector.egg-info/dependency_links.txt
+tag_detector.egg-info/top_level.txt

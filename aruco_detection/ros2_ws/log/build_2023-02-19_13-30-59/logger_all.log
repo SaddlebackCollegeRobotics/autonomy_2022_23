@@ -1,0 +1,159 @@
+[1.515s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'tag_interface']
+[1.515s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['tag_interface'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8ed69ff0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8ef7f160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8ef7f160>>)
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.617s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.617s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.617s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.617s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws'
+[1.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.618s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.620s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.620s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.706s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.706s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.707s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.707s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.707s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.709s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.709s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.709s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.710s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.711s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.711s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.711s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.711s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.711s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.712s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.713s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extensions ['ignore', 'ignore_ament_install']
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extension 'ignore'
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extension 'ignore_ament_install'
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extensions ['colcon_pkg']
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extension 'colcon_pkg'
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extensions ['colcon_meta']
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extension 'colcon_meta'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extensions ['ros']
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_detection) by extension 'ros'
+[1.725s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tag_detection' with type 'ros.ament_python' and name 'tag_detection'
+[1.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extension 'ignore'
+[1.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extension 'ignore_ament_install'
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extensions ['colcon_pkg']
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extension 'colcon_pkg'
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extensions ['colcon_meta']
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extension 'colcon_meta'
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extensions ['ros']
+[1.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/tag_interface) by extension 'ros'
+[1.730s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tag_interface' with type 'ros.ament_cmake' and name 'tag_interface'
+[1.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.839s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tag_detection' in 'src/tag_detection'
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.843s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.864s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[1.872s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.169s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'cmake_args' from command line to 'None'
+[2.170s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'cmake_target' from command line to 'None'
+[2.170s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.170s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[2.170s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'cmake_clean_first' from command line to 'False'
+[2.170s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'cmake_force_configure' from command line to 'False'
+[2.170s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'ament_cmake_args' from command line to 'None'
+[2.171s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[2.171s] Level 5:colcon.colcon_core.verb:set package 'tag_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.171s] DEBUG:colcon.colcon_core.verb:Building package 'tag_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface', 'merge_install': False, 'path': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_interface', 'symlink_install': False, 'test_result_base': None}
+[2.175s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.189s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.191s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_interface' with build type 'ament_cmake'
+[2.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_interface'
+[2.216s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.217s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.217s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface -- -j4 -l4
+[4.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface -- -j4 -l4
+[4.644s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface
+[4.947s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tag_interface)
+[4.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_interface
+[4.970s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface' for CMake module files
+[4.976s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface' for CMake config files
+[4.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('tag_interface', 'cmake_prefix_path')
+[4.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/cmake_prefix_path.ps1'
+[4.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/cmake_prefix_path.dsv'
+[4.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/cmake_prefix_path.sh'
+[4.994s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib'
+[4.995s] Level 1:colcon.colcon_core.shell:create_environment_hook('tag_interface', 'ld_library_path_lib')
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/ld_library_path_lib.ps1'
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/ld_library_path_lib.dsv'
+[5.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/ld_library_path_lib.sh'
+[5.008s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/bin'
+[5.009s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/pkgconfig/tag_interface.pc'
+[5.010s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/python3.10/site-packages'
+[5.011s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/bin'
+[5.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.ps1'
+[5.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.dsv'
+[5.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.sh'
+[5.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.bash'
+[5.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.zsh'
+[5.036s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/colcon-core/packages/tag_interface)
+[5.408s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tag_interface)
+[5.419s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface' for CMake module files
+[5.425s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface' for CMake config files
+[5.427s] Level 1:colcon.colcon_core.shell:create_environment_hook('tag_interface', 'cmake_prefix_path')
+[5.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/cmake_prefix_path.ps1'
+[5.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/cmake_prefix_path.dsv'
+[5.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/cmake_prefix_path.sh'
+[5.441s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib'
+[5.442s] Level 1:colcon.colcon_core.shell:create_environment_hook('tag_interface', 'ld_library_path_lib')
+[5.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/ld_library_path_lib.ps1'
+[5.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/ld_library_path_lib.dsv'
+[5.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/hook/ld_library_path_lib.sh'
+[5.453s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/bin'
+[5.454s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/pkgconfig/tag_interface.pc'
+[5.455s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib/python3.10/site-packages'
+[5.456s] Level 1:colcon.colcon_core.environment:checking '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/bin'
+[5.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.ps1'
+[5.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.dsv'
+[5.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.sh'
+[5.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.bash'
+[5.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/tag_interface/package.zsh'
+[5.475s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/share/colcon-core/packages/tag_interface)
+[5.476s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.478s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.478s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.502s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.503s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.513s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.578s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/local_setup.ps1'
+[5.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/_local_setup_util_ps1.py'
+[5.597s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/setup.ps1'
+[5.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/local_setup.sh'
+[5.607s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/_local_setup_util_sh.py'
+[5.609s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/setup.sh'
+[5.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/local_setup.bash'
+[5.618s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/setup.bash'
+[5.624s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/local_setup.zsh'
+[5.627s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/setup.zsh'

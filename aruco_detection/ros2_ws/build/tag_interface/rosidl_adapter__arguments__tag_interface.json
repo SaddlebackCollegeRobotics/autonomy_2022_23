@@ -1,0 +1,7 @@
+{
+  "package_name": "tag_interface",
+  "non_idl_tuples": [
+    "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_interface:msg/Coordinate.msg",
+    "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_interface:msg/Tag.msg"
+  ]
+}

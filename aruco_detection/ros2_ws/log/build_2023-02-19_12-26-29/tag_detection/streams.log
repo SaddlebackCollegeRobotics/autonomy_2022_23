@@ -1,0 +1,32 @@
+[3.026s] Invoking command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detection': AMENT_PREFIX_PATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface LD_LIBRARY_PATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/prefix_override:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tag_detection build --build-base /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build install --record /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log --single-version-externally-managed
+[4.268s] running egg_info
+[4.271s] writing ../../build/tag_detection/tag_detection.egg-info/PKG-INFO
+[4.273s] writing dependency_links to ../../build/tag_detection/tag_detection.egg-info/dependency_links.txt
+[4.274s] writing entry points to ../../build/tag_detection/tag_detection.egg-info/entry_points.txt
+[4.276s] writing requirements to ../../build/tag_detection/tag_detection.egg-info/requires.txt
+[4.277s] writing top-level names to ../../build/tag_detection/tag_detection.egg-info/top_level.txt
+[4.285s] reading manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+[4.290s] writing manifest file '../../build/tag_detection/tag_detection.egg-info/SOURCES.txt'
+[4.291s] running build
+[4.291s] running build_py
+[4.292s] copying tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection
+[4.295s] running install
+[4.296s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.296s]   warnings.warn(
+[4.297s] running install_lib
+[4.301s] copying /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build/lib/tag_detection/tag_detector.py -> /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection
+[4.306s] byte-compiling /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/tag_detector.py to tag_detector.cpython-310.pyc
+[4.307s]   File "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection/tag_detector.py", line 7
+[4.308s]     import .aruco_dist.py 
+[4.308s]            ^
+[4.309s] SyntaxError: invalid syntax
+[4.309s] 
+[4.310s] running install_data
+[4.311s] running install_egg_info
+[4.317s] removing '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info' (and everything under it)
+[4.319s] Copying ../../build/tag_detection/tag_detection.egg-info to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages/tag_detection-0.0.0-py3.10.egg-info
+[4.326s] running install_scripts
+[4.416s] Installing detect_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection
+[4.417s] Installing subscribe_tag script to /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/tag_detection
+[4.419s] writing list of installed files to '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log'
+[4.536s] Invoked command in '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detection' returned '0': AMENT_PREFIX_PATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface LD_LIBRARY_PATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/prefix_override:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detection/lib/python3.10/site-packages:/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tag_detection build --build-base /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/build install --record /home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detection/install.log --single-version-externally-managed

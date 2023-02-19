@@ -1,0 +1,139 @@
+[0.000000] (-) TimerEvent: {}
+[0.001792] (tag_detector) JobQueued: {'identifier': 'tag_detector', 'dependencies': OrderedDict()}
+[0.002488] (tag_detector) JobStarted: {'identifier': 'tag_detector'}
+[0.055768] (tag_detector) JobProgress: {'identifier': 'tag_detector', 'progress': 'cmake'}
+[0.056814] (tag_detector) Command: {'cmd': ['/usr/bin/cmake', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector', '-DCMAKE_INSTALL_PREFIX=/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/install/tag_detector'], 'cwd': '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cam'), ('SSH_CLIENT', '192.168.68.138 59827 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cam'), ('OLDPWD', '/home/cam/GitHub/autonomy_2022_23/aruco_detection'), ('TERM_PROGRAM_VERSION', '1.75.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6c479241-8bc0-42b4-bbd6-7b7c3b26aeb7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cam'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cam/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c64f98a2d7.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector'), ('SSH_CONNECTION', '192.168.68.138 59827 192.168.68.142 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099035] (-) TimerEvent: {}
+[0.199945] (-) TimerEvent: {}
+[0.300892] (-) TimerEvent: {}
+[0.362354] (tag_detector) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.401062] (-) TimerEvent: {}
+[0.501842] (-) TimerEvent: {}
+[0.602735] (-) TimerEvent: {}
+[0.650774] (tag_detector) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.684373] (tag_detector) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.702870] (-) TimerEvent: {}
+[0.803697] (-) TimerEvent: {}
+[0.904565] (-) TimerEvent: {}
+[1.005412] (-) TimerEvent: {}
+[1.030028] (tag_detector) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.062019] (tag_detector) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.063041] (tag_detector) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.064693] (tag_detector) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.078440] (tag_detector) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.105595] (-) TimerEvent: {}
+[1.206353] (-) TimerEvent: {}
+[1.307114] (-) TimerEvent: {}
+[1.407945] (-) TimerEvent: {}
+[1.459971] (tag_detector) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.491170] (tag_detector) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.492257] (tag_detector) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.494106] (tag_detector) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.508137] (-) TimerEvent: {}
+[1.519543] (tag_detector) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.608278] (-) TimerEvent: {}
+[1.708969] (-) TimerEvent: {}
+[1.809687] (-) TimerEvent: {}
+[1.910394] (-) TimerEvent: {}
+[2.011067] (-) TimerEvent: {}
+[2.111782] (-) TimerEvent: {}
+[2.212496] (-) TimerEvent: {}
+[2.313279] (-) TimerEvent: {}
+[2.400128] (tag_detector) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[2.413533] (-) TimerEvent: {}
+[2.514277] (-) TimerEvent: {}
+[2.614982] (-) TimerEvent: {}
+[2.715680] (-) TimerEvent: {}
+[2.816373] (-) TimerEvent: {}
+[2.917059] (-) TimerEvent: {}
+[2.988176] (tag_detector) StdoutLine: {'line': b'-- Found rclpy: 3.3.5 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[3.006548] (tag_detector) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.017206] (-) TimerEvent: {}
+[3.031990] (tag_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.098707] (tag_detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.117400] (-) TimerEvent: {}
+[3.218106] (-) TimerEvent: {}
+[3.318813] (-) TimerEvent: {}
+[3.419565] (-) TimerEvent: {}
+[3.450337] (tag_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.519756] (-) TimerEvent: {}
+[3.620439] (-) TimerEvent: {}
+[3.721274] (-) TimerEvent: {}
+[3.822133] (-) TimerEvent: {}
+[3.922832] (-) TimerEvent: {}
+[4.023568] (-) TimerEvent: {}
+[4.124221] (-) TimerEvent: {}
+[4.225030] (-) TimerEvent: {}
+[4.326111] (-) TimerEvent: {}
+[4.427767] (-) TimerEvent: {}
+[4.528599] (-) TimerEvent: {}
+[4.629591] (-) TimerEvent: {}
+[4.730917] (-) TimerEvent: {}
+[4.831879] (-) TimerEvent: {}
+[4.888284] (tag_detector) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.932060] (-) TimerEvent: {}
+[5.032819] (-) TimerEvent: {}
+[5.133593] (-) TimerEvent: {}
+[5.234640] (-) TimerEvent: {}
+[5.335516] (-) TimerEvent: {}
+[5.436282] (-) TimerEvent: {}
+[5.537081] (-) TimerEvent: {}
+[5.637954] (-) TimerEvent: {}
+[5.739087] (-) TimerEvent: {}
+[5.837080] (tag_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.839233] (-) TimerEvent: {}
+[5.939952] (-) TimerEvent: {}
+[6.040664] (-) TimerEvent: {}
+[6.146563] (-) TimerEvent: {}
+[6.247295] (-) TimerEvent: {}
+[6.347969] (-) TimerEvent: {}
+[6.448684] (-) TimerEvent: {}
+[6.549528] (-) TimerEvent: {}
+[6.650232] (-) TimerEvent: {}
+[6.750995] (-) TimerEvent: {}
+[6.851843] (-) TimerEvent: {}
+[6.952522] (-) TimerEvent: {}
+[7.009833] (tag_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.052730] (-) TimerEvent: {}
+[7.125995] (tag_detector) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[7.148098] (tag_detector) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[7.152914] (-) TimerEvent: {}
+[7.253686] (-) TimerEvent: {}
+[7.275570] (tag_detector) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[7.276382] (tag_detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.276792] (tag_detector) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[7.277156] (tag_detector) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[7.353808] (-) TimerEvent: {}
+[7.384619] (tag_detector) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[7.453964] (-) TimerEvent: {}
+[7.544840] (tag_detector) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:122 (add_custom_target):\n'}
+[7.545529] (tag_detector) StderrLine: {'line': b'  add_custom_target cannot create target\n'}
+[7.545927] (tag_detector) StderrLine: {'line': b'  "ament_cmake_python_copy_tag_detector" because another target with the same\n'}
+[7.546267] (tag_detector) StderrLine: {'line': b'  name already exists.  The existing target is a custom target created in\n'}
+[7.546629] (tag_detector) StderrLine: {'line': b'  source directory\n'}
+[7.546958] (tag_detector) StderrLine: {'line': b'  "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector".\n'}
+[7.547286] (tag_detector) StderrLine: {'line': b'  See documentation for policy CMP0002 for more details.\n'}
+[7.547606] (tag_detector) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.547901] (tag_detector) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[7.548214] (tag_detector) StderrLine: {'line': b'  CMakeLists.txt:26 (ament_python_install_package)\n'}
+[7.548534] (tag_detector) StderrLine: {'line': b'\n'}
+[7.548846] (tag_detector) StderrLine: {'line': b'\x1b[0m\n'}
+[7.549187] (tag_detector) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:141 (add_custom_target):\n'}
+[7.549636] (tag_detector) StderrLine: {'line': b'  add_custom_target cannot create target\n'}
+[7.549978] (tag_detector) StderrLine: {'line': b'  "ament_cmake_python_build_tag_detector_egg" because another target with the\n'}
+[7.550301] (tag_detector) StderrLine: {'line': b'  same name already exists.  The existing target is a custom target created\n'}
+[7.550619] (tag_detector) StderrLine: {'line': b'  in source directory\n'}
+[7.550938] (tag_detector) StderrLine: {'line': b'  "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/src/tag_detector".\n'}
+[7.551269] (tag_detector) StderrLine: {'line': b'  See documentation for policy CMP0002 for more details.\n'}
+[7.551736] (tag_detector) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.552101] (tag_detector) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[7.552450] (tag_detector) StderrLine: {'line': b'  CMakeLists.txt:26 (ament_python_install_package)\n'}
+[7.552811] (tag_detector) StderrLine: {'line': b'\n'}
+[7.553146] (tag_detector) StderrLine: {'line': b'\x1b[0m\n'}
+[7.554098] (-) TimerEvent: {}
+[7.596601] (tag_detector) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.597186] (tag_detector) StdoutLine: {'line': b'See also "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/CMakeFiles/CMakeOutput.log".\n'}
+[7.618089] (tag_detector) CommandEnded: {'returncode': 1}
+[7.654310] (-) TimerEvent: {}
+[7.722807] (tag_detector) JobEnded: {'identifier': 'tag_detector', 'rc': 1}
+[7.734685] (-) EventReactorShutdown: {}

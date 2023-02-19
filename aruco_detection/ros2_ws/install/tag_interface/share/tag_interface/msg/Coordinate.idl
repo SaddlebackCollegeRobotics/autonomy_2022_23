@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tag_interface/msg/Coordinate.msg
+// generated code does not contain a copyright notice
+
+
+module tag_interface {
+  module msg {
+    struct Coordinate {
+      int64 row;
+
+      int64 col;
+    };
+  };
+};

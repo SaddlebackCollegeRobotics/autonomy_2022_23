@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_c[0m
+[  3%] Built target tag_interface__cpp
+[ 12%] Built target tag_interface__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_cpp[0m
+[ 12%] Built target ament_cmake_python_copy_tag_interface
+[ 41%] Built target tag_interface__rosidl_typesupport_cpp
+[ 41%] Built target tag_interface__rosidl_typesupport_fastrtps_cpp
+[ 41%] Built target tag_interface__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c[0m
+[ 51%] Built target tag_interface__rosidl_typesupport_fastrtps_c
+[ 61%] Built target tag_interface__rosidl_typesupport_introspection_c
+[ 70%] Built target tag_interface__rosidl_typesupport_c
+[ 70%] Built target tag_interface
+[ 74%] Built target tag_interface__py
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_generator_py[0m
+[ 80%] Built target tag_interface__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_interface__rosidl_typesupport_introspection_c__pyext[0m

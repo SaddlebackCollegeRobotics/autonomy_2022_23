@@ -1,0 +1,17 @@
+{
+  "package_name": "tag_detector",
+  "output_dir": "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/rosidl_typesupport_cpp/tag_detector",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/rosidl_adapter/tag_detector:msg/Tag.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/cam/GitHub/autonomy_2022_23/aruco_detection/ros2_ws/build/tag_detector/rosidl_adapter/tag_detector/msg/Tag.idl"
+  ]
+}
