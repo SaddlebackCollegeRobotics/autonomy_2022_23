@@ -1,8 +1,0 @@
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:action/RotateAbsolute.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Color.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:msg/Pose.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Kill.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/SetPen.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/Spawn.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportAbsolute.idl
-/home/cam/GitHub/autonomy_2022_23/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim:srv/TeleportRelative.idl
