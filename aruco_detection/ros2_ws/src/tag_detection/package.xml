@@ -4,11 +4,12 @@
   <name>tag_detection</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="camwolff02@gmail.com">cam</maintainer>
+  <maintainer email="camwolff@email.com">cam</maintainer>
   <license>Apache License 2.0</license>
 
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tag_interface</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
