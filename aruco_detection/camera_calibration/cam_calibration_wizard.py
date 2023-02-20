@@ -12,7 +12,6 @@ import glob
 import numpy as np
 import os
 
-rows, cols = 7, 6
 min_photos = 13  # minimum photos to calibrate camera
 num_cams_to_check = 50  # number of cameras to try before giving up
 input_folder = './input/'
@@ -32,11 +31,6 @@ def write_text(image, text, position):
 def take_photos():
     device_number = 0
     camera_found = False
-    
-    global device_name
-    device_name = input('Enter device name: ')
-    is_stereo = True if input('is this a stereoscopic camera? (y/n): ').upper() == 'Y' else False
-
     while device_number < num_cams_to_check and not camera_found:
         test_cap = cv.VideoCapture(device_number)
         if not test_cap.isOpened(): continue
@@ -64,6 +58,9 @@ def take_photos():
         return False
 
     photos_taken = 0
+
+    device_name = input('Enter device name: ')
+    is_stereo = True if input('is this a stereoscopic camera? (y/n): ').upper() == 'Y' else False
 
     if not os.path.exists(f'{input_folder}{device_name}'):
         os.makedirs(f'{input_folder}{device_name}')
@@ -99,7 +96,6 @@ def calibrate():
     print('starting camera calibration...')
     # termination criteria
     criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 30, 0.001)
-
 
     # prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
     objp = np.zeros((cols*rows,3), np.float32)

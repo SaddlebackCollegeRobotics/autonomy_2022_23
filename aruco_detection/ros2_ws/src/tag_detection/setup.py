@@ -14,7 +14,7 @@ setup(
     install_requires=['setuptools', 'rclpy'],
     zip_safe=True,
     maintainer='cam',
-    maintainer_email='camwolff@email.com',
+    maintainer_email='camwolff02@gmail.com',
     description='TODO: Package description',
     license='Apache-2.0',
     tests_require=['pytest'],
