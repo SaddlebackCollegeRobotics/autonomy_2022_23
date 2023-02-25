@@ -21,7 +21,7 @@ class TagDetector(Node):
         # timer_period = 0.01  # seconds
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.detector = Aruco_Detector(DATA_NAME)       
+        self.detector = Aruco_Detector(DATA_NAME, PATH_TO_DATA)       
 
     def timer_callback(self):
         tag_msg = Tag_msg()

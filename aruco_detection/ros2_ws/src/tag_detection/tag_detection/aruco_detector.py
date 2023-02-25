@@ -39,12 +39,12 @@ def print_text(image, text, pos):
 Tag = namedtuple('Tag', ['id', 'tr', 'tl', 'br', 'bl', 'pos', 'dist'])
 
 class Aruco_Detector():
-    def __init__(self, calibration_data, is_stereo=False, show_gui=False):
+    def __init__(self, calibration_data, host_dir='.', is_stereo=False, show_gui=False):
         self.show_gui = show_gui
         self.is_stereo = is_stereo
 
         # load calibration data from numpy file
-        with np.load(f'{PATH_TO_DATA}/data/{calibration_data}') as X:
+        with np.load(f'{host_dir}/data/{calibration_data}') as X:
             self.mtx, self.dist, _ , _ = [X[i] for i in ('mtx','dist','rvecs','tvecs')]
 
         # define aruco tagdictionary, tag detection parameters, 
@@ -57,20 +57,24 @@ class Aruco_Detector():
         #self.detector = cv2.aruco.ArucoDetector(self.dictionary, self.parameters)
 
     def detect_tags(self):
+
         # create set to store ids for discovered tags, and list to hold tag data
         tag_ids = set()
         tags = []  
 
         # read current frame from camera
         ret, frame = self.cap.read()  
+
         if not ret: return tags
         if self.is_stereo: frame = crop(frame)
 
+        #NOTE segfault!!!
         # detect markers in frame, get ids and corners of markers
         #corners, ids, _ = self.detector.detectMarkers(frame)
         corners, ids, _ = cv2.aruco.detectMarkers(
             frame, self.dictionary, parameters=self.parameters
         )
+        print('bli')    
 
         if corners:  # if there are corners detected
             # use a SubPixel corner refinement method to improve marker detection
@@ -114,7 +118,7 @@ class Aruco_Detector():
                     
                     print_text(frame, f'id: {tag.id} Dist: {tag.dist}', tag.tr)
                     print_text(frame, f'Pos: {tag.pos}', tag.br)
-            
+
         # display image if we're debugging
         if self.show_gui: cv2.imshow('Debug camera view', frame)  
         return tags, frame.shape[1]  # return tags found, and length of image
@@ -125,4 +129,26 @@ class Aruco_Detector():
         self.cap.release()
         cv2.destroyAllWindows()
 
+
+def main():
+    detector = Aruco_Detector('logitech_webcam_data.npz', show_gui=False)
+    from time import time
+    start_time = time()
+
+    while True:
+        tags = detector.detect_tags()
+
+        # print discovered tags every second
+        if time() - start_time > 1:
+            start_time = time()
+            if len(tags) == 0:
+                print('No tags found')
+            else: 
+                for t in tags: print(f'Tag found: {t}') 
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):  # quit when 'q' is pressed
+            break
+
+if __name__ == '__main__':
+    main()
         

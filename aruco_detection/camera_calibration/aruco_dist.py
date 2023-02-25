@@ -18,7 +18,7 @@ CRITERIA = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_COUNT, 40, 0.001)
 # https://docs.opencv.org/4.x/d9/d5d/classcv_1_1TermCriteria.html
 
 PATH_TO_DATA = '.'
-DATA_NAME = 'logitech_webcam_data.npz'
+DATA_NAME = 'macbook_data.npz'
 
 ###HELPER FUNCTIONS#############################################################
 # helper function to simplify cropping photo
@@ -44,7 +44,7 @@ class Aruco_Detector():
         self.is_stereo = is_stereo
 
         # load calibration data from numpy file
-        with np.load(f'{PATH_TO_DATA}/calibration_data/{calibration_data}') as X:
+        with np.load(f'{PATH_TO_DATA}/data/{calibration_data}') as X:
             self.mtx, self.dist, _ , _ = [X[i] for i in ('mtx','dist','rvecs','tvecs')]
 
         # define aruco tagdictionary, tag detection parameters, 
