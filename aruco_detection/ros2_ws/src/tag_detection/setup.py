@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'detect_tag = tag_detection.tag_detector:main',
-            'subscribe_tag = tag_detection.tag_subscriber:main'
+            'subscribe_tag = tag_detection.tag_subscriber:main',
+            'move_to_tag = tag_detection.move_to_tag:main',
+            'dummy_driver = tag_detection.dummy_driver:main'
         ],
     },
 )

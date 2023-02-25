@@ -7,7 +7,7 @@ from tag_interface.msg import Coordinate
 class TagSubscriber(Node):
     def __init__(self):
         super().__init__('tag_subscriber')
-        self.subscription = self.create_subscription(Tag_msg, 'tag_data', self.listener_callback, 10)
+        self.subscription = self.create_subscription(Tag_msg, 'autonomy/tag_data', self.listener_callback, 10)
         self.subscription  # prevent unsused variable warning
 
     def listener_callback(self, tag_msg):

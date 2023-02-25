@@ -5,3 +5,4 @@ Coordinate[] bottom_right
 Coordinate[] bottom_left
 int64[] position
 float64[] distance
+int64 img_length
