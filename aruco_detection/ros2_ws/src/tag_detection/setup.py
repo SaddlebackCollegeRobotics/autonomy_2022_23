@@ -25,7 +25,7 @@ setup(
             'move_to_tag = tag_detection.move_to_tag:main',
             'dummy_driver = tag_detection.dummy_driver:main',
             'dummy_camera = tag_detection.dummy_camera:main',
-            'tag_visualzer = tag_detection.tag_visualizer:main'
+            'tag_visualizer = tag_detection.tag_visualizer:main'
         ],
     },
 )
