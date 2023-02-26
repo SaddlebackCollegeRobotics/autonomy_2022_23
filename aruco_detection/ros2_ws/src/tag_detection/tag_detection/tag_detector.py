@@ -53,7 +53,7 @@ class Tag_Detector(Node):
 
         self.get_logger().info(f"tags found: {len(tag_list.data)}")
         self.publisher_.publish(tag_list)
-        self.cam_publisher_.publish(frame)
+        self.cam_publisher_.publish(self.bridge.cv2_to_imgmsg(frame))
 
 
 
