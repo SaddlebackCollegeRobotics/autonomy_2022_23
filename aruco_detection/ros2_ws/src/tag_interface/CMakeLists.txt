@@ -26,8 +26,8 @@ if(BUILD_TESTING)
 endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Coordinate.msg"
   "msg/Tag.msg"
+  "msg/TagList.msg"
 )
 
 ament_package()

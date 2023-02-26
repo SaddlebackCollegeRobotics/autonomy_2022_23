@@ -44,7 +44,7 @@ class Aruco_Detector():
         self.is_stereo = is_stereo
 
         # load calibration data from numpy file
-        with np.load(f'{PATH_TO_DATA}/data/{calibration_data}') as X:
+        with np.load(f'{PATH_TO_DATA}/calibration_data/{calibration_data}') as X:
             self.mtx, self.dist, _ , _ = [X[i] for i in ('mtx','dist','rvecs','tvecs')]
 
         # define aruco tagdictionary, tag detection parameters, 

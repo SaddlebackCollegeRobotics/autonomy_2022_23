@@ -1,7 +1,4 @@
-int64[] id
-Coordinate[] top_right
-Coordinate[] top_left
-Coordinate[] bottom_right
-Coordinate[] bottom_left
-int64[] position
-float64[] distance
+int64 id
+float64 x_position
+float64 y_position
+float64 distance
