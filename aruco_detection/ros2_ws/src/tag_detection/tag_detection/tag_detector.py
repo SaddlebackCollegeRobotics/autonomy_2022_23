@@ -23,6 +23,8 @@ class Tag_Detector(Node):
         self.bridge = CvBridge()
 
         self.publisher_ = self.create_publisher(TagList, 'autonomy/tag_data', 10)
+        self.cam_publisher_ = self.create_publisher(Image, 'autonomy/tag_visualization', 10)
+        
         # timer_period = 0.01  # seconds
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -39,7 +41,7 @@ class Tag_Detector(Node):
         tag_list = TagList()
         tag_list.data = []
         
-        tags, _ = self.detector.detect_tags(self.frame) 
+        tags, frame = self.detector.detect_tags(self.frame) 
 
         for tag in tags:
             tag_msg = TagData()
@@ -51,6 +53,7 @@ class Tag_Detector(Node):
 
         self.get_logger().info(f"tags found: {len(tag_list.data)}")
         self.publisher_.publish(tag_list)
+        self.cam_publisher_.publish(frame)
 
 
 
