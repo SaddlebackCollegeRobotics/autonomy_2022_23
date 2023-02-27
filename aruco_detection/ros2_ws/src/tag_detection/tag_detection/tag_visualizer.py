@@ -29,8 +29,6 @@ class Tag_Visualizer(Node):
         cv2.imshow('tag orientation visualization', frame)
         cv2.waitKey(1)
 
-        self.get_logger().info('diaplaying image')
-
 def main(args=None):
     rclpy.init(args=args)
     tag_visualizer = Tag_Visualizer()
