@@ -1,7 +1,9 @@
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data
 
 from sensor_msgs.msg import Image
+from sensor_msgs.msg import CompressedImage
 from tag_interface.msg import Tag as TagData
 from tag_interface.msg import TagList 
 
@@ -23,7 +25,7 @@ class Tag_Detector(Node):
         self.bridge = CvBridge()
 
         self.publisher_ = self.create_publisher(TagList, 'autonomy/tag_data', 10)
-        self.cam_publisher_ = self.create_publisher(Image, 'autonomy/tag_visualization', 10)
+        self.cam_publisher_ = self.create_publisher(CompressedImage, 'autonomy/tag_visualization', qos_profile=qos_profile_sensor_data)
         
         # timer_period = 0.01  # seconds
         timer_period = 0.1
@@ -53,7 +55,9 @@ class Tag_Detector(Node):
 
         self.get_logger().info(f"tags found: {len(tag_list.data)}")
         self.publisher_.publish(tag_list)
-        self.cam_publisher_.publish(self.bridge.cv2_to_imgmsg(frame))
+
+        frame = cv2.resize(frame, (640, 360), interpolation=cv2.INTER_AREA)
+        self.cam_publisher_.publish(self.bridge.cv2_to_compressed_imgmsg(frame))
 
 
 

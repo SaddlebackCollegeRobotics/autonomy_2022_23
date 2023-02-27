@@ -21,7 +21,8 @@ CRITERIA = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_COUNT, 40, 0.001)
 ###HELPER FUNCTIONS#####################################################
 # helper function to simplify cropping photo
 def crop(image):
-    return image[0:image.shape[0], 0:image.shape[1]//2]
+    #return image[0:image.shape[0], 0:image.shape[1]//2]
+    return np.split(image, 2, axis=1)[0]
 
 # helper function for printing text on screen
 def print_text(image, text, pos):
