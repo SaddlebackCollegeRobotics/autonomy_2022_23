@@ -17,6 +17,8 @@ class Dummy_Camera(Node):
 
         self.cap = cv2.VideoCapture(camera)
         self.bridge = CvBridge()
+        self.get_logger().info('camera connected')
+
 
     def timer_callback(self):
         ret, frame = self.cap.read()
@@ -25,11 +27,14 @@ class Dummy_Camera(Node):
         if ret:
             self.publisher_.publish(self.bridge.cv2_to_imgmsg(frame))
             self.get_logger().info('Publishing video frame')
+        else:
+            self.get_logger().info('no camera connected')
+
 
 
 def main(args=None):
     rclpy.init(args=args)
-    dummy_camera = Dummy_Camera()
+    dummy_camera = Dummy_Camera(camera=1)
     rclpy.spin(dummy_camera)
 
     dummy_camera.destroy_node()

@@ -1,3 +1,5 @@
+import os
+from glob import glob
 from setuptools import setup
 
 package_name = 'tag_detection'
@@ -10,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*launch.[pyx][yma]*'))  # addef for launch file
     ],
     install_requires=['setuptools', 'rclpy'],
     zip_safe=True,

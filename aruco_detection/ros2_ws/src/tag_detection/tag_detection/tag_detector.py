@@ -13,7 +13,7 @@ from .aruco_detector import *
 
 
 PATH_TO_DATA = 'src/tag_detection/tag_detection/data'
-DATA_NAME = 'zed_data.npz'
+DATA_NAME = 'logitech_webcam_data.npz' #'zed_data.npz'
 
 class Tag_Detector(Node):
     
@@ -63,12 +63,9 @@ class Tag_Detector(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
     tag_detector = Tag_Detector()
-
     rclpy.spin(tag_detector)
 
-    # Destroy the node emplicitly, otherwise garbage collected
     tag_detector.destroy_node()
     rclpy.shutdown()
 

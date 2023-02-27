@@ -14,10 +14,12 @@ class DummyDriver(Node):
         msg_str = ''
         if left_vel == right_vel:
             msg_str = 'stop moving' if left_vel == 0 else 'move straight'
+        elif abs(left_vel) == abs(right_vel):
+            msg_str = 'spinning'
         elif left_vel < right_vel:
-            msg_str = 'move left'
+            msg_str = 'turn left'
         elif left_vel > right_vel:
-            msg_str = 'move right'
+            msg_str = 'turn right'
 
         self.get_logger().info(msg_str)
 
