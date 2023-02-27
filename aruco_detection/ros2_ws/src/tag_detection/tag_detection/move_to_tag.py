@@ -42,23 +42,14 @@ class TagFollower(Node):
         self.tags_found = []
         self.curr_dist = float('inf')
         self.time_tag_seen = perf_counter()
-        self.is_goalpost = False
-        self.moving_through_goal = False
-        self.time_goal_move_started = 0
 
 
     def listener_callback(self, tag_msg):  # read tag data
-        self.tags_found = []
-        
-        if len(tag_msg.data) >= 1:
-            for tag in tag_msg.data:
-                self.tags_found.append(tag)
-
+        self.tags_found = tag_msg.data
 
     def timer_callback(self):  # write move instrucitons from tag data        
         move_msg = Float64MultiArray()
         move_msg.data = TagFollower.STOP
-        vertices = [move_msg.data[0], move_msg.data[1]]
 
         # If we see any tags, update current distance and time
         if len(self.tags_found) > 0:
@@ -69,7 +60,7 @@ class TagFollower(Node):
         if self.curr_dist <= TARGET_DIST:
             move_msg.data = TagFollower.STOP
             self.publisher_.publish(move_msg)
-            self.print_debug(vertices)
+            self.print_debug(move_msg.data)
             return
 
         # If we haven't seen a tag in <timeout> seconds, spin around
@@ -77,11 +68,11 @@ class TagFollower(Node):
         if perf_counter() - self.time_tag_seen > TIME_OUT:
             move_msg.data = TagFollower.SPIN
             self.publisher_.publish(move_msg)
-            self.print_debug(vertices)
+            self.print_debug(move_msg.data)
             return
 
         if len(self.tags_found) == 0: 
-            self.print_debug(vertices)
+            self.print_debug(move_msg.data)
             return
 
         target_dist_from_center = self.tags_found[0].x_position
