@@ -7,7 +7,7 @@ import numpy as np
 
 ###HYPERPARAMETERS######################################################
 # length of markers we are detecting
-MARKER_SIZE = 14.7  # cm
+MARKER_SIZE = 20.0 #14.7  # cm
 
 # for detection of markers in subpixels
 # we search for subpixels inside window and outside zero zone

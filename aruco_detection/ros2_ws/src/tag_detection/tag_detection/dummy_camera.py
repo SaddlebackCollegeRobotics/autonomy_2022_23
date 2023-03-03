@@ -34,7 +34,7 @@ class Dummy_Camera(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    dummy_camera = Dummy_Camera(camera=1)
+    dummy_camera = Dummy_Camera(camera=0)
     rclpy.spin(dummy_camera)
 
     dummy_camera.destroy_node()
