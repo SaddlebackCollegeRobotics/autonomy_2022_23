@@ -18,14 +18,14 @@ TIME_OUT = 5                    # seconds
 class TagFollower(Node):
 
     STOP = [0.0, 0.0]
-    FORWARD = [-1.0, -1.0]
-    SPIN = [-1.0, 1.0]
-    MOVE_LEFT = [-0.1, -1.0]
-    MOVE_RIGHT = [-1.0, -0.1]
+    FORWARD = [0.75, 0.75]
+    SPIN = [-75.0, 75.0]
+    MOVE_LEFT = [0.1, 75.0]
+    MOVE_RIGHT = [75.0, 0.1]
 
     def __init__(self):
         super().__init__('tag_follower')
-        timer_period = 1  # seconds
+        #timer_period = 0.1  # seconds
 
         # INITIALIATIONS
         self.subscription = self.create_subscription(
@@ -37,24 +37,23 @@ class TagFollower(Node):
             Float64MultiArray, 'drive/analog_control', 10
         )
 
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        #self.timer = self.create_timer(timer_period, self.timer_callback)
         
-        self.tags_found = []
         self.curr_dist = float('inf')
         self.time_tag_seen = perf_counter()
+        self.found_tag = False
 
 
     def listener_callback(self, tag_msg):  # read tag data
-        self.tags_found = tag_msg.data
+        move_msg = Float64MultiArray()
+        tags_found = tag_msg.data
 
         # If we see any tags, update current distance and time
-        if len(self.tags_found) > 0:
-            self.curr_dist = self.tags_found[0].distance
+        if len(tags_found) > 0:
+            self.curr_dist = tags_found[0].distance
             self.time_tag_seen = perf_counter()
 
-    def timer_callback(self):  # write move instrucitons from tag data        
-        move_msg = Float64MultiArray()
-
+        ################################################################
         # If we've reached the goal, stop 
         if self.curr_dist <= TARGET_DIST:
             move_msg.data = TagFollower.STOP
@@ -63,15 +62,14 @@ class TagFollower(Node):
         # and look for tag
         elif perf_counter() - self.time_tag_seen > TIME_OUT:
             move_msg.data = TagFollower.SPIN
-            self.publisher_.publish(move_msg)
 
         # if we don't see any tags right now, don't update velocity
-        elif len(self.tags_found) == 0: 
+        elif len(tags_found) == 0: 
             return
 
         # else, move in correct direction
         else:
-            target_dist_from_center = self.tags_found[0].x_position
+            target_dist_from_center = tags_found[0].x_position
 
             if abs(target_dist_from_center) < DEAD_ZONE:  
                 move_msg.data = TagFollower.FORWARD
@@ -81,7 +79,7 @@ class TagFollower(Node):
                 move_msg.data = TagFollower.MOVE_RIGHT
 
         self.publisher_.publish(move_msg)
-        print_debug(move_msg.data)
+        self.print_debug(move_msg.data)
 
 
     def print_debug(self, v: list):
