@@ -9,7 +9,7 @@ from time import perf_counter, sleep
 
 
 # HYPERPARAMETERS / CONST
-TARGET_DIST = 400.0             # cm
+TARGET_DIST = 200.0             # cm
 DEAD_ZONE = 0.1                 # 0 <= deadzone <= 1
 TIME_TO_MOVE_THROUGH_GOAL = 2   # seconds
 TIME_OUT = 5                    # seconds
@@ -18,10 +18,10 @@ TIME_OUT = 5                    # seconds
 class TagFollower(Node):
 
     STOP = [0.0, 0.0]
-    FORWARD = [0.75, 0.75]
-    SPIN = [-75.0, 75.0]
-    MOVE_LEFT = [0.1, 75.0]
-    MOVE_RIGHT = [75.0, 0.1]
+    FORWARD = [1.0, 1.0]
+    SPIN = [-1.0, 1.0]
+    MOVE_LEFT = [0.2, 1.0]
+    MOVE_RIGHT = [1.0, 0.2]
 
     def __init__(self):
         super().__init__('tag_follower')
@@ -41,11 +41,12 @@ class TagFollower(Node):
         
         self.curr_dist = float('inf')
         self.time_tag_seen = perf_counter()
-        self.found_tag = False
+        self.move_msg = Float64MultiArray()
+        self.move_msg.data = TagFollower.STOP
+
 
 
     def listener_callback(self, tag_msg):  # read tag data
-        move_msg = Float64MultiArray()
         tags_found = tag_msg.data
 
         # If we see any tags, update current distance and time
@@ -56,36 +57,33 @@ class TagFollower(Node):
         ################################################################
         # If we've reached the goal, stop 
         if self.curr_dist <= TARGET_DIST:
-            move_msg.data = TagFollower.STOP
+            self.move_msg.data = TagFollower.STOP
 
         # If we haven't seen a tag in <timeout> seconds, spin around
         # and look for tag
         elif perf_counter() - self.time_tag_seen > TIME_OUT:
-            move_msg.data = TagFollower.SPIN
+            self.move_msg.data = TagFollower.SPIN
 
-        # if we don't see any tags right now, don't update velocity
-        elif len(tags_found) == 0: 
-            return
-
-        # else, move in correct direction
-        else:
+        # if we see any tags right now, update velocity
+        elif len(tags_found) > 0: 
             target_dist_from_center = tags_found[0].x_position
 
             if abs(target_dist_from_center) < DEAD_ZONE:  
-                move_msg.data = TagFollower.FORWARD
+                self.move_msg.data = TagFollower.FORWARD
             elif target_dist_from_center < 0:
-                move_msg.data = TagFollower.MOVE_LEFT
+                self.move_msg.data = TagFollower.MOVE_LEFT
             else:
-                move_msg.data = TagFollower.MOVE_RIGHT
+                self.move_msg.data = TagFollower.MOVE_RIGHT
 
-        self.publisher_.publish(move_msg)
-        self.print_debug(move_msg.data)
+        self.publisher_.publish(self.move_msg)
+        self.print_debug()
 
 
-    def print_debug(self, v: list):
-        self.get_logger().info(
-            f'moving autonomously with velocities ({v[0]}, {v[1]})'
-        )
+    def print_debug(self):
+        if len(self.move_msg.data) > 0:
+            self.get_logger().info(
+                f'moving autonomously with velocities ({self.move_msg.data [0]}, {self.move_msg.data [1]})'
+            )
 
 
 

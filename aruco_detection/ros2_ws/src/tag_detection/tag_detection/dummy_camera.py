@@ -5,6 +5,8 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 
+from .zed_camera import *
+
 
 class Dummy_Camera(Node):
     
@@ -15,14 +17,15 @@ class Dummy_Camera(Node):
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
-        self.cap = cv2.VideoCapture(camera)
+        # self.cap = cv2.VideoCapture(camera)
+        self.zed = ZedCamera(camera)
+
         self.bridge = CvBridge()
         self.get_logger().info('camera connected')
 
-
     def timer_callback(self):
-        ret, frame = self.cap.read()
-        image = Image()
+        # ret, frame = self.cap.read()
+        ret, frame = self.zed.read()
 
         if ret:
             self.publisher_.publish(self.bridge.cv2_to_imgmsg(frame))

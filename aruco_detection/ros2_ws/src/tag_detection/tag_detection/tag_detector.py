@@ -13,7 +13,7 @@ from .aruco_detector import *
 
 
 PATH_TO_DATA = 'src/tag_detection/tag_detection/data'
-DATA_NAME = 'logitech_webcam_data.npz' #'zed_data.npz'
+DATA_NAME = 'zed_data.npz'
 
 class Tag_Detector(Node):
     
@@ -30,12 +30,13 @@ class Tag_Detector(Node):
         # timer_period = 0.01  # seconds
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.detector = Aruco_Detector(DATA_NAME, PATH_TO_DATA, is_stereo=True)       
+        self.detector = Aruco_Detector(DATA_NAME, PATH_TO_DATA, is_stereo=False)       
 
         self.frame = np.zeros((2, 2))
 
     def listener_callback(self, image_msg):
         self.frame = self.bridge.imgmsg_to_cv2(image_msg)
+
 
     def timer_callback(self):
         if self.frame.shape == (2, 2): return
@@ -53,8 +54,14 @@ class Tag_Detector(Node):
             tag_msg.distance = tag.dist
             tag_list.data.append(tag_msg)
 
-        self.get_logger().info(f"tags found: {len(tag_list.data)}")
+        #self.get_logger().info(f"tags found: {len(tag_list.data)}")
         self.publisher_.publish(tag_list)
+
+        if len(tags) > 0:
+            self.get_logger().info(f"dist: {tags[0].dist}")
+        else:   
+            self.get_logger().info(f"searching for tags")
+
 
         frame = cv2.resize(frame, (640, 360), interpolation=cv2.INTER_AREA)
         self.cam_publisher_.publish(self.bridge.cv2_to_compressed_imgmsg(frame))
