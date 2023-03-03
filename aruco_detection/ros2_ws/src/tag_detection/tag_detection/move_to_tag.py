@@ -25,7 +25,7 @@ class TagFollower(Node):
 
     def __init__(self):
         super().__init__('tag_follower')
-        timer_period = 0.1  # seconds
+        timer_period = 1  # seconds
 
         # INITIALIATIONS
         self.subscription = self.create_subscription(
@@ -47,44 +47,41 @@ class TagFollower(Node):
     def listener_callback(self, tag_msg):  # read tag data
         self.tags_found = tag_msg.data
 
-    def timer_callback(self):  # write move instrucitons from tag data        
-        move_msg = Float64MultiArray()
-        move_msg.data = TagFollower.STOP
-
         # If we see any tags, update current distance and time
         if len(self.tags_found) > 0:
             self.curr_dist = self.tags_found[0].distance
             self.time_tag_seen = perf_counter()
 
+    def timer_callback(self):  # write move instrucitons from tag data        
+        move_msg = Float64MultiArray()
+
         # If we've reached the goal, stop 
         if self.curr_dist <= TARGET_DIST:
             move_msg.data = TagFollower.STOP
-            self.publisher_.publish(move_msg)
-            self.print_debug(move_msg.data)
-            return
 
         # If we haven't seen a tag in <timeout> seconds, spin around
         # and look for tag
-        if perf_counter() - self.time_tag_seen > TIME_OUT:
+        elif perf_counter() - self.time_tag_seen > TIME_OUT:
             move_msg.data = TagFollower.SPIN
             self.publisher_.publish(move_msg)
-            self.print_debug(move_msg.data)
+
+        # if we don't see any tags right now, don't update velocity
+        elif len(self.tags_found) == 0: 
             return
 
-        if len(self.tags_found) == 0: 
-            self.print_debug(move_msg.data)
-            return
-
-        target_dist_from_center = self.tags_found[0].x_position
-
-        if abs(target_dist_from_center) < DEAD_ZONE:  
-            move_msg.data = TagFollower.FORWARD
-        elif target_dist_from_center < 0:
-            move_msg.data = TagFollower.MOVE_LEFT
+        # else, move in correct direction
         else:
-            move_msg.data = TagFollower.MOVE_RIGHT
+            target_dist_from_center = self.tags_found[0].x_position
+
+            if abs(target_dist_from_center) < DEAD_ZONE:  
+                move_msg.data = TagFollower.FORWARD
+            elif target_dist_from_center < 0:
+                move_msg.data = TagFollower.MOVE_LEFT
+            else:
+                move_msg.data = TagFollower.MOVE_RIGHT
 
         self.publisher_.publish(move_msg)
+        print_debug(move_msg.data)
 
 
     def print_debug(self, v: list):
