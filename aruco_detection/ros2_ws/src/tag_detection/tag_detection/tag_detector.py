@@ -15,7 +15,7 @@ from .aruco_detector import *
 PATH_TO_DATA = 'src/tag_detection/tag_detection/data'
 DATA_NAME = 'zed_data.npz'
 
-class Tag_Detector(Node):
+class TagDetector(Node):
     
     def __init__(self):
         # ROS2 NODE 
@@ -70,7 +70,7 @@ class Tag_Detector(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    tag_detector = Tag_Detector()
+    tag_detector = TagDetector()
     rclpy.spin(tag_detector)
 
     tag_detector.destroy_node()

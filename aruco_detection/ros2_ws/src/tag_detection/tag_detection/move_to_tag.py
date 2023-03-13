@@ -28,12 +28,12 @@ class TagFollower(Node):
         #timer_period = 0.1  # seconds
 
         # INITIALIATIONS
-        self.subscription = self.create_subscription(
-            TagList, 'autonomy/tag_data', self.listener_callback, 10
+        self._subscription = self.create_subscription(
+            TagList, 'autonomy/tag_data', self._listener_callback, 10
         )
-        self.subscription  # prevent unsused variable warning
+        self._subscription  # prevent unsused variable warning
 
-        self.publisher_ = self.create_publisher(
+        self._publisher = self.create_publisher(
             Float64MultiArray, 'drive/analog_control', 10
         )
 
@@ -46,7 +46,7 @@ class TagFollower(Node):
 
 
 
-    def listener_callback(self, tag_msg):  # read tag data
+    def _listener_callback(self, tag_msg):  # read tag data
         tags_found = tag_msg.data
 
         # If we see any tags, update current distance and time
@@ -75,11 +75,11 @@ class TagFollower(Node):
             else:
                 self.move_msg.data = TagFollower.MOVE_RIGHT
 
-        self.publisher_.publish(self.move_msg)
-        self.print_debug()
+        self._publisher.publish(self.move_msg)
+        self._print_debug()
 
 
-    def print_debug(self):
+    def _print_debug(self):
         if len(self.move_msg.data) > 0:
             self.get_logger().info(
                 f'moving autonomously with velocities ({self.move_msg.data [0]}, {self.move_msg.data [1]})'

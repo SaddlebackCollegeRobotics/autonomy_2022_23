@@ -25,16 +25,3 @@ class ZedCamera:
         frame = cv2.resize(frame, (2208, 1242), interpolation=cv2.INTER_AREA)
 
         return ret, frame
-    
-# def main():
-#     zed = ZedCamera(2)
-#     while True:
-#         ret, frame = zed.read()
-#         cv2.imshow('frame', frame)
-#         if cv2.waitKey(1) & 0xFF == ord('q'):
-#             break
-
-#     cv2.destroyAllWindows()
-
-# if __name__ == '__main__':
-#     main()

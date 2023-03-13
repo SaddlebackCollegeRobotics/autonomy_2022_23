@@ -9,7 +9,7 @@ from cv_bridge import CvBridge
 import cv2
 
 
-class Tag_Visualizer(Node):
+class TagVisualizer(Node):
     
     def __init__(self):
         super().__init__('tag_visualizer')
@@ -31,7 +31,7 @@ class Tag_Visualizer(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    tag_visualizer = Tag_Visualizer()
+    tag_visualizer = TagVisualizer()
     rclpy.spin(tag_visualizer)
 
     tag_visualizer.destroy_node()

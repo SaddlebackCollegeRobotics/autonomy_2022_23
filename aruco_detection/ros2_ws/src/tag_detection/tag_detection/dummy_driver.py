@@ -5,10 +5,14 @@ from std_msgs.msg import Float64MultiArray
 class DummyDriver(Node):
     def __init__(self):
         super().__init__('dummy_driver')
-        self.subscription = self.create_subscription(Float64MultiArray, 'drive/analog_control', self.listener_callback, 10)
-        self.subscription  # prevent unsused variable warning
+        self.__subscription = self.create_subscription(
+            Float64MultiArray,
+            'drive/analog_control', 
+            self.__listener_callback, 
+            10)
+        self.__subscription  # prevent unsused variable warning
 
-    def listener_callback(self, msg):
+    def __listener_callback(self, msg):
         left_vel, right_vel = msg.data
 
         msg_str = ''
