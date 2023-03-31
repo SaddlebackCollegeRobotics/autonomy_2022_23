@@ -15,7 +15,7 @@ from .aruco_detector import *
 PATH_TO_DATA = 'src/tag_detection/tag_detection/data'
 DATA_NAME = 'zed_data.npz'
 
-class Tag_Detector(Node):
+class TagDetector(Node):
     
     def __init__(self):
         # ROS2 NODE 
@@ -30,7 +30,7 @@ class Tag_Detector(Node):
         # timer_period = 0.01  # seconds
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.detector = Aruco_Detector(DATA_NAME, PATH_TO_DATA, is_stereo=False)       
+        self.detector = ArucoDetector(DATA_NAME, PATH_TO_DATA, is_stereo=False)       
 
         self.frame = np.zeros((2, 2))
 
@@ -70,7 +70,7 @@ class Tag_Detector(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    tag_detector = Tag_Detector()
+    tag_detector = TagDetector()
     rclpy.spin(tag_detector)
 
     tag_detector.destroy_node()

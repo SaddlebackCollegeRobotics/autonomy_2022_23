@@ -8,7 +8,7 @@ from sensor_msgs.msg import Image
 from .zed_camera import *
 
 
-class Dummy_Camera(Node):
+class DummyCamera(Node):
     
     def __init__(self, camera=0):
         super().__init__('dummy_camera')
@@ -37,7 +37,7 @@ class Dummy_Camera(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    dummy_camera = Dummy_Camera(camera=0)
+    dummy_camera = DummyCamera(camera=0)
     rclpy.spin(dummy_camera)
 
     dummy_camera.destroy_node()

@@ -40,7 +40,7 @@ Tag = namedtuple(
 )
 
 
-class Aruco_Detector():
+class ArucoDetector:
 
     def __init__(self, calibration_data, data_folder, is_stereo=False):
         self.is_stereo = is_stereo
