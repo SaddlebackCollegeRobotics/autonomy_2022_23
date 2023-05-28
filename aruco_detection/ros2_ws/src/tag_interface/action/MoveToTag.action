@@ -1,0 +1,5 @@
+string camera_channel
+---
+twist cmd_vel
+---
+float32 distance
