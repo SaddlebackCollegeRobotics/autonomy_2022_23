@@ -1,3 +1,5 @@
+import signal
+import sys
 
 from typing import Any, Callable
 
@@ -38,14 +40,11 @@ class IdleState(State):
 
             # Collect GNSS coordinate input
             prompt = '[IDLE] Enter '
-            format_msg = '\nFormat: <latitude> <longitude> <altitude>'
-            input_angle_fn = lambda: Angle(int(x) for x in input('> ').split(' ')[:3])
+            info_msg = '[IDLE] Enter Latitude (float): '
+            latitude = get_input(info_msg, error_msg, lambda: float(input('> ')))
             
-            info_msg = f'{prompt} Latitude {format_msg}'
-            latitude = get_input(info_msg, error_msg, input_angle_fn)
-            
-            info_msg = f'{prompt} Longitude {format_msg}'
-            longitude = get_input(info_msg, error_msg, input_angle_fn)
+            info_msg = '[IDLE] Enter Longitude (float: '
+            longitude = get_input(info_msg, error_msg, lambda: float(input('> ')))
 
             # select type of goal we are navigating to
             options = ''.join([f'\n[{x.value}] {x.name}' for x in GoalType])
@@ -67,6 +66,7 @@ class IdleState(State):
         blackboard['target_gps'] = Gps(latitude, longitude)
         return 'next'
     
+
 def get_input(info_msg: str, error_msg: str, input_fn: Callable[[None], Any]) -> Any:
     input_valid = False
 
@@ -75,6 +75,9 @@ def get_input(info_msg: str, error_msg: str, input_fn: Callable[[None], Any]) ->
         try:
             user_input = input_fn()
             input_valid = True
+        except KeyboardInterrupt:
+            print('\n[STATUS] program exited safely')
+            sys.exit()
         except:
             print(error_msg)
 

@@ -8,12 +8,6 @@ class GoalType(Enum):
     GOAL = 2
 
 
-class Angle(NamedTuple):
-    degrees: int
-    minutes: int
-    seconds: int
-
-
 class Gps(NamedTuple):
-    latitude: Angle
-    longitude: Angle
+    latitude: float
+    longitude: float
