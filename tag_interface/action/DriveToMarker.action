@@ -1,0 +1,6 @@
+string camera_channel
+bool is_gateway
+---
+twist cmd_vel
+---
+float32 success

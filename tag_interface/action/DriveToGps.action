@@ -1,0 +1,5 @@
+NavSatFix gnss_waypoint
+---
+twist cmd_vel
+---
+bool success
