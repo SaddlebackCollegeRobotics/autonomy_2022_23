@@ -30,7 +30,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TagList.msg"
   "srv/DetectTag.srv"
   "action/DriveToGps.action"
-  "action/SearchForTag.action"
+  "action/DriveToMarker.action"
+  "action/SpiralSearch.action"
 )
 
 ament_package()
