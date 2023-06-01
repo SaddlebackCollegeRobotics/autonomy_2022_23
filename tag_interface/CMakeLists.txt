@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+scmake_minimum_required(VERSION 3.8)
 project(tag_interface)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -29,7 +29,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Tag.msg"
   "msg/TagList.msg"
   "srv/DetectTag.srv"
-  "action/DriveToWaypoint.action"
+  "action/DriveToGps.action"
   "action/SearchForTag.action"
 )
 
