@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup
 
-package_name = 'tag_detection'
+package_name = 'detect_tag'
 
 setup(
     name=package_name,
@@ -23,12 +23,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'detect_tag = tag_detection.tag_detector:main',
-            'subscribe_tag = tag_detection.tag_subscriber:main',
-            'move_to_tag = tag_detection.move_to_tag:main',
-            'dummy_driver = tag_detection.dummy_driver:main',
-            'dummy_camera = tag_detection.dummy_camera:main',
-            'tag_visualizer = tag_detection.tag_visualizer:main'
+            f'detect_tag = {package_name}.tag_detector:main',
+            f'subscribe_tag = {package_name}.tag_subscriber:main',
+            f'move_to_tag = {package_name}.move_to_tag:main',
+            f'dummy_driver = {package_name}.dummy_driver:main',
+            f'dummy_camera = {package_name}.dummy_camera:main',
+            f'tag_visualizer = {package_name}.tag_visualizer:main'
         ],
     },
 )

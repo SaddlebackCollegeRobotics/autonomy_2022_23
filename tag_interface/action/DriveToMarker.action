@@ -1,5 +1,6 @@
 string camera_channel
 bool is_gateway
+float32 stopping_dist
 ---
 twist cmd_vel
 ---
