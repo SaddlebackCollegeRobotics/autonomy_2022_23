@@ -49,7 +49,12 @@ class AutonomyAlgorithm(Node):
             self.create_action_client(DriveToMarker, feedback_cb=self._drive_rover)
 
     def _drive_rover(self, feedback_msg):
-        self.self._blackboard['rover_controller'].publish(feedback_msg.cmd_vel)
+        feedback = feedback_msg.feedback
+        self.get_logger().info(
+            f'Received feedback 👽: Linear: {feedback.cmd_vel.linear.x}, \
+                Angular: {feedback.cmd_vel.angular.z}');
+    
+        self.self._blackboard['rover_controller'].publish(feedback.cmd_vel)
 
     def _build_state_machine(self):
         """Build autonomy state machine (asm)
@@ -58,7 +63,7 @@ class AutonomyAlgorithm(Node):
              'DriveToPost', 'DriveBetweenGate', 'AddWaypoint', 
              'DriveToLastWaypoint', 'ManualDrive', 'Dead'}
 
-        l = {'repeat', 'next', 'success', 'fail', 'manual', 'post', 
+        l = {'repeat', 'back', 'next', 'success', 'fail', 'manual', 'post', 
              'gate', 'dead'}
         """
         self.asm = StateMachine(outcomes=['dead'])

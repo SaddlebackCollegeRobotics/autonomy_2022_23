@@ -71,6 +71,7 @@ def main(args=None):
     # ask server to complete goal
     action_client.send_goal(10)
     rclpy.spin(action_client)
+    print('goal completed!')
 
 
 if __name__ == '__main__':
