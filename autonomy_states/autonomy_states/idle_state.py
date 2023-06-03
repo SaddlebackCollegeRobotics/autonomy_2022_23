@@ -6,8 +6,7 @@ from typing import Any, Callable
 from yasmin import State
 from yasmin.blackboard import Blackboard
 
-from ..autonomy_data import *
-
+from .data import GoalType
 
 class IdleState(State):
     transitions={'next': 'DriveToGps',
@@ -31,32 +30,36 @@ class IdleState(State):
             print()
 
             info_msg = '[IDLE] Select an option:\
-                        [0] switch to manual drive\
-                        [1] enter a GPS coordinate'
+                        \n[0] switch to manual drive\
+                        \n[1] enter a GPS coordinate'
             collect_gps = get_input(info_msg, error_msg, lambda: bool(int(input('> '))))
-            
-            if not collect_gps:
-                return 'override'
+
+            if not collect_gps or collect_gps is None:
+                return 'manual'
 
             # Collect GNSS coordinate input
             prompt = '[IDLE] Enter '
             info_msg = '[IDLE] Enter Latitude (float): '
             latitude = get_input(info_msg, error_msg, lambda: float(input('> ')))
-            
+            if latitude is None: return 'manual'
+
             info_msg = '[IDLE] Enter Longitude (float: '
             longitude = get_input(info_msg, error_msg, lambda: float(input('> ')))
+            if latitude is None: return 'manual'
 
             # select type of goal we are navigating to
             options = ''.join([f'\n[{x.value}] {x.name}' for x in GoalType])
             info_msg = '[IDLE] Select a goal type:' + options
 
             goal_type = get_input(info_msg, error_msg, lambda: GoalType(int(input('> '))))
+            if goal_type is None: return 'manual'
 
             # confirm input before we move on
             info_msg = '[IDLE] Select an option:\
-                        [0] confirm input\
-                        [1] go back'
+                        \n[0] confirm input\
+                        \n[1] go back'
             go_back = get_input(info_msg, error_msg, lambda: bool(int(input('> '))))
+            if go_back is None: return 'manual'
             
             if not go_back:
                 break
@@ -75,9 +78,6 @@ def get_input(info_msg: str, error_msg: str, input_fn: Callable[[None], Any]) ->
         try:
             user_input = input_fn()
             input_valid = True
-        except KeyboardInterrupt:
-            print('\n[STATUS] program exited safely')
-            sys.exit()
         except:
             print(error_msg)
 
