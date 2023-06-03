@@ -66,35 +66,6 @@ class Tag_Detector(Node):
         frame = cv2.resize(frame, (640, 360), interpolation=cv2.INTER_AREA)
         self.cam_publisher_.publish(self.bridge.cv2_to_compressed_imgmsg(frame))
 
-    def execute_callback(self, goal_handle):
-        self.get_logger().info('Executing action...')
-
-        # Perform tag detection until the action is preempted or the frame shape is invalid
-        while self.frame.shape != (2, 2) and goal_handle.is_active:
-            rclpy.spin_once(self, timeout_sec=0.1)  # Allow other nodes to execute
-
-        # Stop tag detection by stopping the timer
-        self.timer.cancel()
-
-        if self.frame.shape != (2, 2):
-            tag_list = TagList()
-            tag_list.data = []
-
-            tags, _ = self.detector.detect_tags(self.frame)
-
-            for tag in tags:
-                tag_msg = TagData()
-                tag_msg.id = int(tag.id)
-                tag_msg.x_position = tag.x_pos
-                tag_msg.y_position = tag.y_pos
-                tag_msg.distance = tag.dist
-                tag_list.data.append(tag_msg)
-
-            self.get_logger().info(f"Tags found: {len(tag_list.data)}")
-            goal_handle.succeed(result=tag_list)
-        else:
-            self.get_logger().info("Invalid frame shape")
-            goal_handle.abort()
 
 
 def main(args=None):
