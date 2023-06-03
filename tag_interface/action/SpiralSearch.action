@@ -1,5 +1,5 @@
 string camera_channel
 ---
-twist cmd_vel
+geometry_msgs/Twist cmd_vel
 ---
 float32 success

@@ -2,6 +2,6 @@ string camera_channel
 bool is_gateway
 float32 stopping_dist
 ---
-twist cmd_vel
+geometry_msgs/Twist cmd_vel
 ---
 float32 success

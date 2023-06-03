@@ -1,4 +1,4 @@
-scmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.8)
 project(tag_interface)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -12,6 +12,8 @@ find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -25,13 +27,27 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-rosidl_generate_interfaces(${PROJECT_NAME}
+set(msg_files
   "msg/Tag.msg"
   "msg/TagList.msg"
+)
+
+set(srv_files
   "srv/DetectTag.srv"
+)
+
+set(action_files
   "action/DriveToGps.action"
   "action/DriveToMarker.action"
   "action/SpiralSearch.action"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
+  DEPENDENCIES geometry_msgs
+  DEPENDENCIES sensor_msgs  
 )
 
 ament_package()
