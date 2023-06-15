@@ -6,7 +6,7 @@ from typing import Any, Callable
 from yasmin import State
 from yasmin.blackboard import Blackboard
 
-from .data import GoalType
+from .data import GoalType, Gps
 
 class IdleState(State):
     transitions={'next': 'DriveToGps',
@@ -30,11 +30,11 @@ class IdleState(State):
             print()
 
             info_msg = '[IDLE] Select an option:\
-                        \n[0] switch to manual drive\
-                        \n[1] enter a GPS coordinate'
-            collect_gps = get_input(info_msg, error_msg, lambda: bool(int(input('> '))))
+                        \n[0] enter a GPS coordinate\
+                        \n[1] switch to manual drive'
+            manual = get_input(info_msg, error_msg, lambda: bool(int(input('> '))))
 
-            if not collect_gps or collect_gps is None:
+            if manual or manual is None:
                 return 'manual'
 
             # Collect GNSS coordinate input
@@ -78,6 +78,8 @@ def get_input(info_msg: str, error_msg: str, input_fn: Callable[[None], Any]) ->
         try:
             user_input = input_fn()
             input_valid = True
+        except KeyboardInterrupt:
+            return None
         except:
             print(error_msg)
 

@@ -1,10 +1,10 @@
 from yasmin import State
 from yasmin.blackboard import Blackboard
 
+import time
 
 class DriveToPostState(State):
-    transitions={'repeat': 'DriveToPost',
-                 'success': 'AddWaypoint',
+    transitions={'success': 'AddWaypoint',
                  'fail': 'DriveToLastWaypoint',
                  'manual': 'ManualDrive'}
 
@@ -12,11 +12,6 @@ class DriveToPostState(State):
         super().__init__(outcomes=[*DriveToPostState.transitions])
 
     def execute(self, blackboard: Blackboard) -> str:
-        if False:
-            return 'repeat'
-        if True:
-            return 'success'
-        if ...:
-            return 'fail'
-        if ...:
-            return 'manual'
+        print('driving to post')
+        time.sleep(1)
+        return 'success'

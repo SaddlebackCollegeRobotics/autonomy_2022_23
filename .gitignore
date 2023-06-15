@@ -2,6 +2,7 @@ log/
 build/
 install/
 __pycache__/
+.vscode/
 
 # for macos
 .DS_Store

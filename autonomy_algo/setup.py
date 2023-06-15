@@ -24,9 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            f'autonomy_algo = {package_name}.autonomy_algo:main',
-            f'naive_algo = {package_name}.naive_algo:main',
-            f'autonomy_cli = {package_name}.autonomy_cli:main',
+            f'algo = {package_name}.autonomy_algo:main',
+            f'gui = {package_name}.autonomy_gui:main'
         ],
     },
 )

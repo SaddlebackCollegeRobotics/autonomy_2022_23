@@ -5,7 +5,7 @@ from typing import NamedTuple
 class GoalType(Enum):
     GNSS_ONLY = 0
     POST = 1
-    GOAL = 2
+    GATE = 2
 
 
 class Gps(NamedTuple):

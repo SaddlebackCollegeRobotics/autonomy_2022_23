@@ -1,19 +1,23 @@
 from yasmin import State
 from yasmin.blackboard import Blackboard
 
-from ..autonomy_data import *
+from .data import Gps
 
+import time
 
 class AddWaypointState(State):
     transitions={'next': 'Idle'}
+    counter = 0.0
 
     def __init__(self):
         super().__init__(outcomes=[*AddWaypointState.transitions])
-        self._gps_subsciber = self.create_
 
     def execute(self, blackboard: Blackboard) -> str:
-        curr_gps = Gps((0, 0, 0), (0, 0, 0))  #TODO get current gps from GPS pub
-        
+        curr_gps = Gps(self.counter, self.counter)  #TODO get current gps from GPS pub
+        self.counter += 1
+        print('waypoint added')
+        time.sleep(1)
+
         if 'waypoints' in blackboard:
             blackboard['waypoints'].append(curr_gps)
         else:

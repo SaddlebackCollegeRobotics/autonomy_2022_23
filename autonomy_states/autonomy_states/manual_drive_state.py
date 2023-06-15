@@ -1,19 +1,16 @@
 from yasmin import State
 from yasmin.blackboard import Blackboard
 
+import time
 
 class ManualDriveState(State):
-    transitions={'repeat': 'ManualDrive',
-                 'next': 'Idle',
-                 'manual': 'Dead'}
+    transitions={'next': 'Idle',
+                 'kill': 'Dead'}
 
     def __init__(self):
         super().__init__(outcomes=[*ManualDriveState.transitions])
 
     def execute(self, blackboard: Blackboard) -> str:
-        if False:
-            return 'repeat'
-        if True:
-            return 'next'
-        if ...:
-            return 'manual'
+        print('driving manually')
+        time.sleep(1)
+        return 'kill'

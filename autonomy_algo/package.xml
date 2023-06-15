@@ -12,7 +12,7 @@
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>cv_bridge</exec_depend>
 
-  <exec_depend>tag_interface</exec_depend>
+  <exec_depend>autonomy_interface</exec_depend>
   <exec_depend>autonomy_states</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
