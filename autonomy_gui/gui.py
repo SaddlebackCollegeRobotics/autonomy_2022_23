@@ -1,42 +1,40 @@
-from enum import Enum
-
 import rclpy
 from rclpy.node import Node
 
 import streamlit as st
-from streamlit_modal import Modal
 
 from sensor_msgs.msg import NavSatFix
 from std_msgs.msg import Bool
 from autonomy_interface.msg import Mission
 
-import streamlit.components.v1 as components
+import threading
 
+mission_topic_name = '/autonomy/mission'
+result_topic_name = '/autonomy/result'
 mission = Mission()
+result = None
 
-def publish():
+def callback(msg):
+    global result
+    result = msg.data
+
+@st.cache_resource
+def create_publisher():
     rclpy.init(args=None)
-    mission_topic_name = '/autonomy/mission'
-
     node = Node('gui_pub')
-    pub = node.create_publisher(
-        Mission, 
-        mission_topic_name, 
-        10)
+    return node.create_publisher(Mission, mission_topic_name, 10)
 
-    pub.publish(mission)
-    node.destroy_node()
-    rclpy.shutdown()
+pub = create_publisher()
 
 def run_mission():
     print('running mission')
     mission.manual = False
-    publish()
+    pub.publish(mission)
 
 def run_manual_override():
     print('overriding')
     mission.manual = True
-    publish()
+    pub.publish(mission)
 
 
 with st.container():
@@ -68,3 +66,6 @@ with st.container():
     left_col, right_col = st.columns(2)
     start_btn = left_col.button('Start Mission', on_click=run_mission)
     manual_btn = right_col.button('Manual Override', on_click=run_manual_override)
+
+    if result is not None:
+        st.write(result)
